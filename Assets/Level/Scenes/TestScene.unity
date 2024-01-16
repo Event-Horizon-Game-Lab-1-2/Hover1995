@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 131680476}
   - component: {fileID: 131680475}
   - component: {fileID: 131680474}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 317737723}
   - component: {fileID: 317737722}
   - component: {fileID: 317737721}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 344247049}
   - component: {fileID: 344247048}
   - component: {fileID: 344247047}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -861,7 +861,7 @@ GameObject:
   - component: {fileID: 586559926}
   - component: {fileID: 586559925}
   - component: {fileID: 586559924}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ GameObject:
   - component: {fileID: 840439978}
   - component: {fileID: 840439977}
   - component: {fileID: 840439976}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 1174181592}
   - component: {fileID: 1174181591}
   - component: {fileID: 1174181590}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1363,6 +1363,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 60220886}
     m_Modifications:
+    - target: {fileID: 45141804351692016, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
+      propertyPath: StepLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050302320432552736, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
+      propertyPath: GroundLayer.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6389886768400716391, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1549,7 +1557,7 @@ GameObject:
   - component: {fileID: 1570188669}
   - component: {fileID: 1570188668}
   - component: {fileID: 1570188667}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,7 +1735,7 @@ GameObject:
   - component: {fileID: 1704450343}
   - component: {fileID: 1704450342}
   - component: {fileID: 1704450341}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1832,7 +1840,7 @@ GameObject:
   - component: {fileID: 1862057220}
   - component: {fileID: 1862057219}
   - component: {fileID: 1862057218}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: StairStep (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

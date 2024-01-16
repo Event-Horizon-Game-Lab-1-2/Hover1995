@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3074695999514158210}
   - component: {fileID: 8417177133606169486}
   - component: {fileID: 3666500682831059739}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: MapCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 4c1240607ff3cab4bb75fbf01bf911be, type: 2}
   m_TargetDisplay: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 8672744753997866213}
   - component: {fileID: 2473429323958072778}
   - component: {fileID: 9151198527902583686}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: RearCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3873028846471213050}
   - component: {fileID: 1537598904940581804}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: MiniMapTag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 3152877521699294497}
   - component: {fileID: 8141410734504383488}
   - component: {fileID: 433947092390763424}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: MainCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 45141804351692016}
   - component: {fileID: 5037711497207758718}
   - component: {fileID: 4698702671107664507}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 1032965597899270551}
   - component: {fileID: 2131992056417587013}
   - component: {fileID: 4166352947393961214}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
