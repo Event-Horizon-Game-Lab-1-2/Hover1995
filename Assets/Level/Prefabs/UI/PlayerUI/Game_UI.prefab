@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 371336722842818480}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e690dab124d6bc43b5fd684e3a2aaef, type: 3}
+  m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 2068431934446934212}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 71938a330827e644c82d07f097ccfd59, type: 3}
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -282,10 +282,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3248160016176171289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 507c92f91589d44439b7fbb285b6eb83, type: 3}
+  m_Script: {fileID: 11500000, guid: 8972ccc6072e53343af205ab9fbf64c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MiniMapView: {fileID: 8400000, guid: 4c1240607ff3cab4bb75fbf01bf911be, type: 2}
+  MiniMapView: {fileID: 0}
 --- !u!222 &7699603377938495033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3774835974377246330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88a7720219dbc7a45abf0af979c97e03, type: 3}
+  m_Script: {fileID: 11500000, guid: e7d2030e13391af458cafa7449f281a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedVisualizer: {fileID: 2154844100077524038}
@@ -546,8 +546,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 71938a330827e644c82d07f097ccfd59, type: 3}
-  m_Type: 3
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
