@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1632775040878988981
+--- !u!1001 &1277123489116534327
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,12 +10,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 525109053321969513, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_Name
-      value: StopPlatform
+      value: Trap_Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5992354
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_Color.g
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5507298
       objectReference: {fileID: 0}
     - target: {fileID: 2773078898068465980, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: EffectOnTrigger
       value: 
-      objectReference: {fileID: 8806507560466097510}
+      objectReference: {fileID: 6345754187132095306}
     - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -65,24 +77,25 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 525109053321969513, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8806507560466097510}
+      insertIndex: 2
+      addedObject: {fileID: 6345754187132095306}
   m_SourcePrefab: {fileID: 100100000, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
---- !u!1 &1288389967519658460 stripped
+--- !u!1 &1653048581092919646 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 525109053321969513, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
-  m_PrefabInstance: {fileID: 1632775040878988981}
+  m_PrefabInstance: {fileID: 1277123489116534327}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8806507560466097510
+--- !u!114 &6345754187132095306
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1288389967519658460}
+  m_GameObject: {fileID: 1653048581092919646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a01eacbb87ac1c341a4671c3aaf2dd1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e803bec41736ae4a9368eecf58523f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EffectTime: 5
+  JumpHeigh: 20
+  GravityScale: 1
