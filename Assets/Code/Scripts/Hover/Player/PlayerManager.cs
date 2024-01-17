@@ -6,11 +6,21 @@ public class PlayerManager : MonoBehaviour
 {
     private Movement PlayerMovement;
     private StepController StepController;
+    private UsableManager UsableManager;
+
+    [SerializeField] KeyCode[] UsableKeys = new KeyCode[3]{KeyCode.A, KeyCode.S, KeyCode.D};
 
     private void Awake()
     {
         PlayerMovement = GetComponent<Movement>();
         StepController = GetComponent<StepController>();
+        UsableManager = GetComponent<UsableManager>();
+    }
+    private void Update()
+    {
+        for (int i = 0; i < UsableKeys.Length; i++)
+            if (Input.GetKeyDown(UsableKeys[i]))
+                UsableManager.useUsable(i);
     }
 
     private void FixedUpdate()

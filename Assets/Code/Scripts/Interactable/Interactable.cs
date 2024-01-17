@@ -15,4 +15,9 @@ public class Interactable : MonoBehaviour
                 Destroy(gameObject);
         }
     }
+
+    public void Trigger(UsableManager usableManager, int usableIndex)
+    {
+        EffectOnTrigger.ApplyEffect(usableManager, usableIndex);
+    }
 }
