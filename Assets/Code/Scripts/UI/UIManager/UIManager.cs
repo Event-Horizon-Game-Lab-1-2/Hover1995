@@ -35,6 +35,6 @@ public class UIManager : MonoBehaviour
 
     public void SetDirection()
     {
-        DirectionVisualizer.VisualizeDirection();
+        //DirectionVisualizer.VisualizeDirection();
     }
 }

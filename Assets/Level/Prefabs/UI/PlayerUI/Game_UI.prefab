@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5874239021194813656}
-  - component: {fileID: 4628496823516143725}
+  - component: {fileID: 8426437742804724531}
   m_Layer: 0
   m_Name: Game_UI
   m_TagString: Untagged
@@ -353,7 +353,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4628496823516143725
+--- !u!114 &8426437742804724531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -362,13 +362,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3774835974377246330}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7d2030e13391af458cafa7449f281a9, type: 3}
+  m_Script: {fileID: 11500000, guid: 88a7720219dbc7a45abf0af979c97e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpeedVisualizer: {fileID: 2154844100077524038}
   Score: {fileID: 7976504053731007704}
   MiniMap: {fileID: 3544049050144960068}
-  RearViewMirror: {fileID: 8400000, guid: 90b072108d04604459ba88bb2282fd81, type: 2}
+  RearViewMirror: {fileID: 0}
 --- !u!1 &5079834522528328307
 GameObject:
   m_ObjectHideFlags: 0

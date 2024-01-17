@@ -27,11 +27,11 @@ public class Movement : MonoBehaviour
         [Tooltip("Is the force applied when going forward")]
         [SerializeField] private float PositiveForce = 20f;
         [Tooltip("Is the force applied when going backward")]
-        [SerializeField] private float RotationSpeed = 30f;
+        [SerializeField] private float RotationSpeed = 1f;
         [Space]
-        [HideInInspector] public float SpeedLimiter = 0.25f;
+        [HideInInspector] public float SpeedLimiter;
         [HideInInspector] public float ClampedVelocity;
-        [HideInInspector] private float LinearVelocity;
+        [HideInInspector] private float LinearVelocity = 0f;
         [HideInInspector] private bool CanMove = true;
         #endregion
         #region Ground Check
@@ -60,6 +60,7 @@ public class Movement : MonoBehaviour
     {
         Body = GetComponent<Rigidbody>();
         Body.velocity = Vector3.zero;
+        SpeedLimiter = 0.75f;
     }
 
     public void Move(float direction)
@@ -74,7 +75,7 @@ public class Movement : MonoBehaviour
         Mathf.Clamp01(AccelerationTimer);
         Mathf.Clamp01(acceleration);
 
-        //InputHandling
+        //Adding Force
         if (direction != 0 && LinearVelocity < MaxSpeed * SpeedLimiter)
             Body.AddForce(transform.forward * PositiveForce * acceleration * direction);
         else
