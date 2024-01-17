@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Collectible : MonoBehaviour
+public class Interactable : MonoBehaviour
 {
     [SerializeField] LayerMask CollisionLayer;
     [SerializeField] Effect EffectOnTrigger;
