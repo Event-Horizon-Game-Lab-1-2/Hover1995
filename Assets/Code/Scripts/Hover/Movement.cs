@@ -29,6 +29,7 @@ public class Movement : MonoBehaviour
         [Tooltip("Is the force applied when going backward")]
         [SerializeField] private float RotationSpeed = 30f;
         [Space]
+        [HideInInspector] public float SpeedLimiter = 0.25f;
         [HideInInspector] public float ClampedVelocity;
         [HideInInspector] private float LinearVelocity;
         [HideInInspector] private bool CanMove = true;
@@ -74,7 +75,7 @@ public class Movement : MonoBehaviour
         Mathf.Clamp01(acceleration);
 
         //InputHandling
-        if (direction != 0 && LinearVelocity < MaxSpeed)
+        if (direction != 0 && LinearVelocity < MaxSpeed * SpeedLimiter)
             Body.AddForce(transform.forward * PositiveForce * acceleration * direction);
         else
             AccelerationTimer = 0.0f;
