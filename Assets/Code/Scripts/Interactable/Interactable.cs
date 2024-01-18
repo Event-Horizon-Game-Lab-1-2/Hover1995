@@ -25,8 +25,8 @@ public class Interactable : MonoBehaviour
         }
     }
 
-    public void Trigger(UsableManager usableManager, int usableIndex)
+    public void Trigger(UsableManager usableManager)
     {
-        EffectOnTrigger.ApplyEffect(usableManager, usableIndex);
+        EffectOnTrigger.ApplyEffect(usableManager);
     }
 }

@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] KeyCode[] UsableKeys = new KeyCode[3]{KeyCode.A, KeyCode.S, KeyCode.D};
 
+    [HideInInspector] public bool VisibleToEnemy = true;
+
     private void Awake()
     {
         PlayerMovement = GetComponent<Movement>();
@@ -18,6 +20,7 @@ public class PlayerManager : MonoBehaviour
     }
     private void Update()
     {
+        //Use the usable
         for (int i = 0; i < UsableKeys.Length; i++)
             if (Input.GetKeyDown(UsableKeys[i]))
                 UsableManager.useUsable(i);

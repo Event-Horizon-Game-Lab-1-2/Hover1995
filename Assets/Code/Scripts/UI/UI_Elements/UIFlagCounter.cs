@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class UIFlagCounter : MonoBehaviour
 {
+    [Header("Images")]
     [SerializeField] Image[] PlayerFlag = new Image[3];
     [SerializeField] Image[] EnemyFlag = new Image[3];
-
-
+    [Header("Colors")]
     [SerializeField] Color EmptyColor = Color.white;
     [SerializeField] Color FillColorPlayer = Color.blue;
     [SerializeField] Color FillColorEnemy = Color.red;

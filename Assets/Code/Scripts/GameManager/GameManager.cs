@@ -7,7 +7,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GameManager : MonoBehaviour
 {
 
-    public static UnityEvent<bool, int> FlagTaken = new UnityEvent<bool, int>();
+    public static UnityEvent<bool, int> FlagTaken;
 
     public static GameManager Instance { get; private set; }
 
@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
                 EndGame();
         }
     }
+
     private void EndGame()
     {
         if (PlayerFlags >= FlagToWin)
