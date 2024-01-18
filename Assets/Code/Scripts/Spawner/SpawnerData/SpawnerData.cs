@@ -9,5 +9,5 @@ public class SpawnerData : MonoBehaviour
     [Tooltip("Max Amount of spawnable object of this type")]
     public int MaxSpawnAmount;
     [Tooltip("Spawn probability")]
-    [Range(0.0f, 1.0f)] public float SpawnProbability = 1.0f;
+    [HideInInspector][Range(0.0f, 1.0f)] public float SpawnProbability = 1.0f;
 }

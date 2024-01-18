@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 
@@ -19,16 +20,14 @@ public class Spawner : MonoBehaviour
     
     //Interactable referces
     private List<Interactable> InteractableList;
-    private List<Transform> InteractablePositionList;
-
-
+    private List<Transform> InteractableTransforms;
 
     private void Awake()
     {
         InteractableList = new List<Interactable>();
-        InteractablePositionList = new List<Transform>();
+        InteractableTransforms = new List<Transform>();
     }
-
+    
     private void Start()
     {
         //spawn all objects
@@ -39,45 +38,57 @@ public class Spawner : MonoBehaviour
                 Interactable newObject = ObjectsToGenerate[i].InteractableToSpawn;
                 Transform newposition = PositionController.GetRandomPosition();
 
-                InteractableList.Add(newObject);
-                InteractablePositionList.Add(newposition);
-
-                Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity);
+                InteractableTransforms.Add(newposition);
+                InteractableList.Add( Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity) );
             }
         }
-    }
-    public bool CanSpawn()
-    {
-        if (!RespawnOnTaken)
-            return false;
-
-        bool canSpawn = true;
-        //in a cycle to avoid removed object in the same frame error
-        for(int i = 0; i < ObjectsToGenerate.Length;i++)
-        {
-            if (InteractableList[i] == null)
-            {
-                PositionController.RecoverPosition(InteractablePositionList[i]);
-                InteractablePositionList.RemoveAt(i);
-                canSpawn = false;
-            }
-        }
-
-        return canSpawn;
     }
 
     public void Spawn()
     {
-        Debug.Log("Spawn");
-        int randomObject = UnityEngine.Random.Range(0, ObjectsToGenerate.Length - 1);
+        if (!RespawnOnTaken)
+            return;
 
+        //Update old spawn object position
+        updateInteractableList();
+
+        //select what object spawn
+        int randomObject = UnityEngine.Random.Range(0, ObjectsToGenerate.Length - 1);
         Interactable newObject = ObjectsToGenerate[randomObject].InteractableToSpawn;
+        //choose a random position
+
         Transform newposition = PositionController.GetRandomPosition();
 
-        InteractableList.Add(newObject);
-        InteractablePositionList.Add(newposition);
-
-        Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity);
+        InteractableTransforms.Add(newposition);
+        InteractableList.Add(Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity));
+    }
+    
+    public void recoverSpawnPoint(Transform transform)
+    {
+        //free that position
+        PositionController.RecoverPosition(transform);
     }
 
+    private void updateInteractableList()
+    {
+        for (int i = 0; i < ObjectsToGenerate.Length; i++)
+        {
+            //find a removed object
+            if (InteractableList[i] == null)
+            {
+                InteractableList.RemoveAt(i);
+                recoverSpawnPoint(InteractableTransforms[i].transform);
+                InteractableTransforms.RemoveAt(i);
+
+            }
+        }
+    }
+
+    private void debugPrintList()
+    {
+        for(int i = 0; i< InteractableList.Count; i++)
+        {
+            Debug.Log(InteractableList[i].ToString());
+        }
+    }
 }

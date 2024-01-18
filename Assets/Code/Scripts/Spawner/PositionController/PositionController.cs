@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -26,34 +27,48 @@ public class PositionController: MonoBehaviour
 
     public void RecoverPosition(Transform positionToRecover)
     {
+        UsedSpawns.Remove(positionToRecover);
         FreeSpawns.Add(positionToRecover);
     }
 
     public void OccupyPosition(Transform positionToOccupy)
     {
         FreeSpawns.Remove(positionToOccupy);
+        UsedSpawns.Add(positionToOccupy);
     }
 
     public Transform GetRandomPosition()
     {
         int index = UnityEngine.Random.Range(0, FreeSpawns.Count - 1);
         Transform positionChosen = FreeSpawns[index];
-        UsedSpawns.Add(positionChosen);
-        FreeSpawns.RemoveAt(index);
-        return positionChosen;
-    }
 
-    public int ObjecSpawnCount()
-    {
-        return UsedSpawns.Count;
+        OccupyPosition(positionChosen);
+
+        return positionChosen;
     }
 
     private void OnDrawGizmos()
     {
+    #if UNITY_EDITOR
         for (int i = 0; i < SpawnsPositions.Count; i++)
         {
             Gizmos.color = SphereColor;
             Gizmos.DrawSphere(SpawnsPositions[i].position, SphereSize);
+        }
+    #endif
+        if(Application.isPlaying) 
+        {
+            for (int i = 0; i < FreeSpawns.Count; i++)
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawSphere(FreeSpawns[i].position, SphereSize);
+            }
+
+            for (int i = 0; i < UsedSpawns.Count; i++)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(UsedSpawns[i].position, SphereSize);
+            }
         }
     }
 }

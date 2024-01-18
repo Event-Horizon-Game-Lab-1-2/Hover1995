@@ -1,19 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-    public delegate void FlagObtained();
-    public static event FlagObtained OnFlagObtained;
+
+    public static UnityEvent<bool, int> FlagTaken = new UnityEvent<bool, int>();
+    //public static UnityEvent InteractableTriggred;
 
     public static GameManager Instance { get; private set; }
 
     [SerializeField] UIManager UI;
     [SerializeField] PlayerManager Player;
 
-    public int BlueFlag;
-    public int RedFlag;
+    [SerializeField] private int FlagToWin = 3;
+
+    public int EnemyFlags;
+    public int PlayerFlags;
+
+    private int Score = 0;
 
     private void Start()
     {
@@ -21,15 +28,40 @@ public class GameManager : MonoBehaviour
             Instance = this;
         
         DontDestroyOnLoad(gameObject);
-    }
 
-    private void Update()
+        if (FlagTaken == null)
+            FlagTaken = new UnityEvent<bool, int>();
+
+        FlagTaken.AddListener(OnFlagTaken);
+    }
+    
+    private void OnFlagTaken(bool playerTeam, int flagScore)
     {
-
+        if(playerTeam)
+        {
+            PlayerFlags++;
+            Score += flagScore;
+            if (PlayerFlags >= FlagToWin)
+                EndGame();
+        }
+        else
+        {
+            EnemyFlags++;
+            if (EnemyFlags >= FlagToWin)
+                EndGame();
+        }
     }
 
-    private void FixedUpdate()
+    private void EndGame()
     {
-        UI.SetUISpeed(Player.GetLinearVelocity());
+        if (PlayerFlags >= FlagToWin)
+        {
+            Debug.Log("PLAYER WON");
+        }
+        else
+        {
+            Debug.Log("ENEMY WON");
+        }
     }
+
 }

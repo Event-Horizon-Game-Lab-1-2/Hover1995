@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class SpawnerManager : MonoBehaviour
 {
-    [SerializeField] private Spawner[] Spawners;
+    [SerializeField] private Spawner SpawnerWithRespawn;
     [SerializeField][Range(0.1f, 10f)] private float RespawnTime = 1f;
 
     public static UnityEvent InteractableTriggred;
@@ -20,16 +20,12 @@ public class SpawnerManager : MonoBehaviour
 
     private void AllocateInteractable()
     {
-        StartCoroutine(AddObject());
+        StartCoroutine(SpawnNewObject());
     }
 
-    IEnumerator AddObject()
+    IEnumerator SpawnNewObject()
     {
         yield return new WaitForSeconds(RespawnTime);
-        for (int i = 0; i < Spawners.Length; i++)
-        {
-            if (Spawners[i].CanSpawn())
-                Spawners[i].Spawn();
-        }
+        SpawnerWithRespawn.Spawn();
     }
 }

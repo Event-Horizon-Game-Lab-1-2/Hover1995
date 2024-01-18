@@ -10,9 +10,18 @@ public class Interactable : MonoBehaviour
     {
         if (1 << other.gameObject.layer == CollisionLayer)
         {
-            EffectOnTrigger.ApplyEffect(other.gameObject);
+            if(EffectOnTrigger != null)
+            {
+                EffectOnTrigger.ApplyEffect(other.gameObject);
+            }
+            else
+                Debug.LogWarning("EFFECT NOT SET " + this);
+            
             if(RemoveOnTrigger)
-                Destroy(gameObject);
+            {
+                SpawnerManager.InteractableTriggred.Invoke();
+                Destroy(this.gameObject);
+            }
         }
     }
 
