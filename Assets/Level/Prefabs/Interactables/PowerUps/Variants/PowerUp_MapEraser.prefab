@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3431077680151426635, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
       propertyPath: m_Name
-      value: PowerUp
+      value: PowerUp_MapEraser
       objectReference: {fileID: 0}
     - target: {fileID: 5867955526242800804, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
       propertyPath: m_RootOrder
@@ -55,6 +55,18 @@ PrefabInstance:
     - target: {fileID: 5867955526242800804, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128702792161294917, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999243
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128702792161294917, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.012304304
+      objectReference: {fileID: 0}
+    - target: {fileID: 6128702792161294917, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.41
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

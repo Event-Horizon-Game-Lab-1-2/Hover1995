@@ -10,6 +10,6 @@ public class FlagEffect : Effect
     [SerializeField] private bool PlayerFlag = false;
     public override void ApplyEffect(GameObject gameObject)
     {
-        
+        GameManager.FlagTaken.Invoke(PlayerFlag, ScoreValue);
     }
 }

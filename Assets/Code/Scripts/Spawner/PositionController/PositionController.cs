@@ -17,7 +17,7 @@ public class PositionController: MonoBehaviour
     [SerializeField] List<Transform> SpawnsPositions;
 
     private List<Transform> FreeSpawns;
-    public List<Transform> UsedSpawns;
+    private List<Transform> UsedSpawns;
 
     private void Awake()
     {

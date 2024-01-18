@@ -21,7 +21,6 @@ public class SpeedEditEffect : Effect
         objectMovement.SpeedLimiter = NewSpeedLimiter;
         yield return new WaitForSeconds(EffectTime);  
         objectMovement.SpeedLimiter = oldLimiter;
-        
     }
 
 }

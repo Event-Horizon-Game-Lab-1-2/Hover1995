@@ -12,10 +12,17 @@ public class UIManager : MonoBehaviour
 
     [Header("Direction visulizer")]
     [SerializeField] public DirectionVisualizer DirectionVisualizer;
+    [Space]
+    [Header("Scores")]
     [Tooltip("Game score")]
     [SerializeField] public TMP_Text Score;
+    [Tooltip("Game score")]
+    [SerializeField] private UIFlagCounter UIFlagCounter;
+    [Space]
+    [Header("Minimap")]
     [Tooltip("Minimap")]
     [SerializeField] public MiniMap MiniMap;
+    [Header("Rear View")]
     [Tooltip("Rear view mirror")]
     [SerializeField] public RenderTexture RearViewMirror;
     [Space]
@@ -30,11 +37,23 @@ public class UIManager : MonoBehaviour
     private void FixedUpdate()
     {
         SetUISpeed(PlayerManager.GetLinearVelocity());
+        SetUIScore(GameManager.Score);
+        SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
     }
 
     public void SetUISpeed(float linearSpeed)
     {
         SpeedVisualizer.setProgress(linearSpeed);
+    }
+
+    public void SetUIScore(int score)
+    {
+        Score.SetText(score.ToString());
+    }
+
+    public void SetUIFlag(int playerF, int enemyF)
+    {
+        UIFlagCounter.SetScore(playerF, enemyF);
     }
 
     public void SetDirection()

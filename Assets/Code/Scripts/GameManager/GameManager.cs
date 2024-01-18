@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
 {
 
     public static UnityEvent<bool, int> FlagTaken = new UnityEvent<bool, int>();
-    //public static UnityEvent InteractableTriggred;
 
     public static GameManager Instance { get; private set; }
 
@@ -20,7 +19,7 @@ public class GameManager : MonoBehaviour
     public int EnemyFlags;
     public int PlayerFlags;
 
-    private int Score = 0;
+    public int Score = 0;
 
     private void Start()
     {
@@ -51,7 +50,6 @@ public class GameManager : MonoBehaviour
                 EndGame();
         }
     }
-
     private void EndGame()
     {
         if (PlayerFlags >= FlagToWin)
