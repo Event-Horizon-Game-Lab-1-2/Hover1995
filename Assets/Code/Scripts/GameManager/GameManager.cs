@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int FlagToWin = 3;
 
-    public int EnemyFlags;
-    public int PlayerFlags;
+    [HideInInspector] public int EnemyFlags;
+    [HideInInspector] public int PlayerFlags;
 
     public int Score = 0;
 
