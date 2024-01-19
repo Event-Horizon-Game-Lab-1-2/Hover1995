@@ -39,7 +39,7 @@ public class PositionController: MonoBehaviour
 
     public Transform GetRandomPosition()
     {
-        int index = UnityEngine.Random.Range(0, FreeSpawns.Count - 1);
+        int index = UnityEngine.Random.Range(0, FreeSpawns.Count-1);
         Transform positionChosen = FreeSpawns[index];
 
         OccupyPosition(positionChosen);

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -127,9 +127,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,9 +148,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,9 +169,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,9 +190,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,9 +211,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,9 +232,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,9 +253,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,9 +274,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,9 +295,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,9 +316,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,9 +337,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,9 +358,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,9 +379,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,9 +400,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -421,9 +421,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,9 +442,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 6608
+        y: 5083
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -463,9 +463,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,9 +484,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -505,9 +505,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,9 +526,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -547,9 +547,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -568,9 +568,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -589,9 +589,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -610,9 +610,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -631,9 +631,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -652,9 +652,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -673,9 +673,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -694,9 +694,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -715,9 +715,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -736,9 +736,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -757,9 +757,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -778,9 +778,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 6195
+        y: 4692
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -799,9 +799,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -820,9 +820,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -841,9 +841,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -862,9 +862,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -883,9 +883,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -904,9 +904,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -925,9 +925,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,9 +946,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -967,9 +967,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -988,9 +988,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1009,9 +1009,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1030,9 +1030,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1051,9 +1051,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1072,9 +1072,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1093,9 +1093,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1114,9 +1114,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 5782
+        y: 4301
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1135,9 +1135,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1156,9 +1156,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1177,9 +1177,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1198,9 +1198,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1219,9 +1219,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1240,9 +1240,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1261,9 +1261,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1282,9 +1282,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1303,9 +1303,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1324,9 +1324,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1345,9 +1345,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1366,9 +1366,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1387,9 +1387,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1408,9 +1408,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1429,9 +1429,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1450,9 +1450,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 5369
+        y: 3910
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1471,9 +1471,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1492,9 +1492,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1513,9 +1513,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1534,9 +1534,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1555,9 +1555,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1576,9 +1576,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1597,9 +1597,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1618,9 +1618,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1639,9 +1639,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1660,9 +1660,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1681,9 +1681,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1702,9 +1702,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1723,9 +1723,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1744,9 +1744,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1765,9 +1765,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1786,9 +1786,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 4956
+        y: 3519
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1807,9 +1807,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1828,9 +1828,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1849,9 +1849,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1870,9 +1870,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1891,9 +1891,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1912,9 +1912,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1933,9 +1933,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1954,9 +1954,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1975,9 +1975,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1996,9 +1996,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2017,9 +2017,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2038,9 +2038,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2059,9 +2059,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2080,9 +2080,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2101,9 +2101,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2122,9 +2122,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 4543
+        y: 3128
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2143,9 +2143,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2164,9 +2164,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2185,9 +2185,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2206,9 +2206,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2227,9 +2227,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2248,9 +2248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2269,9 +2269,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2290,9 +2290,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2311,9 +2311,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2332,9 +2332,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2353,9 +2353,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2374,9 +2374,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2395,9 +2395,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2416,9 +2416,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2437,9 +2437,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2458,9 +2458,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 4130
+        y: 2737
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2479,9 +2479,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2500,9 +2500,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2521,9 +2521,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2542,9 +2542,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2563,9 +2563,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2584,9 +2584,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2605,9 +2605,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2626,9 +2626,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2647,9 +2647,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2668,9 +2668,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2689,9 +2689,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2710,9 +2710,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2731,9 +2731,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2752,9 +2752,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2773,9 +2773,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2794,9 +2794,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 3717
+        y: 2346
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2815,9 +2815,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2836,9 +2836,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2857,9 +2857,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2878,9 +2878,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2899,9 +2899,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2920,9 +2920,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2941,9 +2941,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2962,9 +2962,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2983,9 +2983,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3004,9 +3004,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3025,9 +3025,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3046,9 +3046,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3067,9 +3067,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3088,9 +3088,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3109,9 +3109,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3130,9 +3130,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 3304
+        y: 1955
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3151,9 +3151,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3172,9 +3172,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3193,9 +3193,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3214,9 +3214,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3235,9 +3235,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3256,9 +3256,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3277,9 +3277,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3298,9 +3298,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3319,9 +3319,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3340,9 +3340,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3361,9 +3361,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3382,9 +3382,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3403,9 +3403,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3424,9 +3424,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3445,9 +3445,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3466,9 +3466,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 2891
+        y: 1564
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3487,9 +3487,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3508,9 +3508,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3529,9 +3529,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3550,9 +3550,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3571,9 +3571,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3592,9 +3592,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3613,9 +3613,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3634,9 +3634,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3655,9 +3655,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3676,9 +3676,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3697,9 +3697,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3718,9 +3718,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3739,9 +3739,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3760,9 +3760,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3781,9 +3781,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3802,9 +3802,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 2478
+        y: 1173
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3823,9 +3823,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3844,9 +3844,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3865,9 +3865,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3886,9 +3886,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3907,9 +3907,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3928,9 +3928,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3949,9 +3949,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3970,9 +3970,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3991,9 +3991,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4012,9 +4012,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4033,9 +4033,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4054,9 +4054,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4075,9 +4075,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4096,9 +4096,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4117,9 +4117,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4138,9 +4138,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 2065
+        y: 782
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4159,9 +4159,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4180,9 +4180,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4201,9 +4201,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4222,9 +4222,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4243,9 +4243,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4264,9 +4264,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4285,9 +4285,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4306,9 +4306,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4327,9 +4327,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4348,9 +4348,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4369,9 +4369,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4390,9 +4390,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4411,9 +4411,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4432,9 +4432,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4453,9 +4453,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4474,9 +4474,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 7470
-        y: 1652
+        y: 391
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4495,9 +4495,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4516,9 +4516,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 498
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4537,9 +4537,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 996
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4558,9 +4558,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1494
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4579,9 +4579,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1992
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4600,9 +4600,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2490
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4621,9 +4621,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2988
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4642,9 +4642,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3486
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4663,9 +4663,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 3984
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4684,9 +4684,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4482
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4705,9 +4705,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4980
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4726,9 +4726,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5478
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4747,9 +4747,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5976
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4768,9 +4768,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6474
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4789,9 +4789,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 6972
-        y: 1239
+        y: 0
         width: 498
-        height: 413
+        height: 391
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4801,993 +4801,6 @@ TextureImporter:
       bones: []
       spriteID: e0cf88d583ccdb146b8db3de265bb08a
       internalID: 1264265954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_223
-      rect:
-        serializedVersion: 2
-        x: 7470
-        y: 1239
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 412e8232cd9e51a42bed2eb9f28c8d67
-      internalID: -1665803539
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_224
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef90d36e1a6af9e458b3bfe04af78414
-      internalID: 2109100450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_225
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 54d82821693f75b46bc4a53ea059e616
-      internalID: -536060557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_226
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da16c2f6665dff748972cc63f04ad365
-      internalID: 1492885936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_227
-      rect:
-        serializedVersion: 2
-        x: 1494
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f640555442dd3764a986aa05335f09d0
-      internalID: 65259262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_228
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5ff51670e503064e8e42a2b87e34a28
-      internalID: -710390083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_229
-      rect:
-        serializedVersion: 2
-        x: 2490
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a99bf89e1e62cea459d03eb6bac9897f
-      internalID: 1477291569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_230
-      rect:
-        serializedVersion: 2
-        x: 2988
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7484324a85f164e48b3b5c7c9d4cf68e
-      internalID: 88535690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_231
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a217f4105f949464db28e2fcad2b2f2a
-      internalID: 794439428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_232
-      rect:
-        serializedVersion: 2
-        x: 3984
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bfdc752e276018942b99d30538ab88d2
-      internalID: -95552740
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_233
-      rect:
-        serializedVersion: 2
-        x: 4482
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61598bdee2b75ad4ba0e74b9ed00b494
-      internalID: -2111816383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_234
-      rect:
-        serializedVersion: 2
-        x: 4980
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1346c7553c2ada5408b86e9bdf264667
-      internalID: 1852762515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_235
-      rect:
-        serializedVersion: 2
-        x: 5478
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e2c04b7446cdca143bc9c878e8b8277f
-      internalID: -1673998357
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_236
-      rect:
-        serializedVersion: 2
-        x: 5976
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36c6f079d78d8fe49bd7f622640943a7
-      internalID: 1923874377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_237
-      rect:
-        serializedVersion: 2
-        x: 6474
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e88647d849e41734a8b1ce431a3e29d1
-      internalID: -1853129391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_238
-      rect:
-        serializedVersion: 2
-        x: 6972
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c641a7064ac10fc488585f7a4485fe24
-      internalID: 273334772
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_239
-      rect:
-        serializedVersion: 2
-        x: 7470
-        y: 826
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b9ce7b98ecb6334e84e8503234cf6cf
-      internalID: 379309602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_240
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c5f30bea5a40124eb2263fa4a766da1
-      internalID: 1577791618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_241
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e42f6ec0c17f33746b981af776b8d995
-      internalID: -1221466333
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_242
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97f28fe4fb8c1e84eb2c7bb2c1dd309c
-      internalID: -1074316064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_243
-      rect:
-        serializedVersion: 2
-        x: 1494
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 073bd2e46791cba4a84831e59691ac8f
-      internalID: -658666019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_244
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8aa2717a5d4b527449deb06f0cdcbb56
-      internalID: 638220937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_245
-      rect:
-        serializedVersion: 2
-        x: 2490
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a44161bf4a2e32d48b6252f52c3ca609
-      internalID: -2057904292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_246
-      rect:
-        serializedVersion: 2
-        x: 2988
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8d427cd142de934c9fa707b93f573be
-      internalID: -1789481347
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_247
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 76fcaae97e7bf084887e880fe814bf02
-      internalID: -1536520614
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_248
-      rect:
-        serializedVersion: 2
-        x: 3984
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0a09afc27211474d9e2eba9a12e4bdf
-      internalID: -734258438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_249
-      rect:
-        serializedVersion: 2
-        x: 4482
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a8c5d78d3f7f9040895d83052c559f4
-      internalID: 1935594137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_250
-      rect:
-        serializedVersion: 2
-        x: 4980
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aafbf581a49b870468fcd8fc252c0a1a
-      internalID: 1991149476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_251
-      rect:
-        serializedVersion: 2
-        x: 5478
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c4275ecf05d98340a94e439ac9813d8
-      internalID: 2109792514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_252
-      rect:
-        serializedVersion: 2
-        x: 5976
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 247f458a99255b14ba5e3b62c66f6653
-      internalID: 382237232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_253
-      rect:
-        serializedVersion: 2
-        x: 6474
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20b7c925751292048b2333f9f5fe3228
-      internalID: -793194686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_254
-      rect:
-        serializedVersion: 2
-        x: 6972
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd986f055c353f14799c8135a655121f
-      internalID: -2052084961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_255
-      rect:
-        serializedVersion: 2
-        x: 7470
-        y: 413
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7786b6decda56d48870ce02c17b78f7
-      internalID: 705071681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_256
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a24b5e5a59be7d418c7a17b46be0bf6
-      internalID: 989632856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_257
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dde5cd3e1013cf449f714e48c9d539c
-      internalID: -1775243165
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_258
-      rect:
-        serializedVersion: 2
-        x: 996
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7c47c7cb2656bf4d83e2cf0211db2ec
-      internalID: -72696660
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_259
-      rect:
-        serializedVersion: 2
-        x: 1494
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 541ebf784fa824a45b9f15b1c50cbc31
-      internalID: 1581929768
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_260
-      rect:
-        serializedVersion: 2
-        x: 1992
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63b5a0c59e7b4e64c92e51285fc2c8ab
-      internalID: 722204030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_261
-      rect:
-        serializedVersion: 2
-        x: 2490
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6fdfaeee6da97447a07c6513607a689
-      internalID: 837482255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_262
-      rect:
-        serializedVersion: 2
-        x: 2988
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0843128d366cecd45b8fc1a63cee10eb
-      internalID: -1815918903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_263
-      rect:
-        serializedVersion: 2
-        x: 3486
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b673761a4bed9c4e8ad908182b89ead
-      internalID: 95895370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_264
-      rect:
-        serializedVersion: 2
-        x: 3984
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc65b2689d380f5449e7d6050e57f107
-      internalID: -314025868
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_265
-      rect:
-        serializedVersion: 2
-        x: 4482
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30a2465e9b5a8834b9520cfd0a2d9321
-      internalID: -384299431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_266
-      rect:
-        serializedVersion: 2
-        x: 4980
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5b5737a301843640b26fe0911a83a99
-      internalID: -296106677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_267
-      rect:
-        serializedVersion: 2
-        x: 5478
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc58c6dff61b06f4fa042e7734b9e1ed
-      internalID: 1911142004
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_268
-      rect:
-        serializedVersion: 2
-        x: 5976
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6758628e6aef9cd4f900587733b10689
-      internalID: 672474120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toothless-dancing_269
-      rect:
-        serializedVersion: 2
-        x: 6474
-        y: 0
-        width: 498
-        height: 413
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 623352298d0c2694098364f7a80332c2
-      internalID: 81174492
       vertices: []
       indices: 
       edges: []
@@ -5942,57 +4955,10 @@ TextureImporter:
       toothless-dancing_220: 2102303582
       toothless-dancing_221: -1542107060
       toothless-dancing_222: 1264265954
-      toothless-dancing_223: -1665803539
-      toothless-dancing_224: 2109100450
-      toothless-dancing_225: -536060557
-      toothless-dancing_226: 1492885936
-      toothless-dancing_227: 65259262
-      toothless-dancing_228: -710390083
-      toothless-dancing_229: 1477291569
       toothless-dancing_23: -1003895930
-      toothless-dancing_230: 88535690
-      toothless-dancing_231: 794439428
-      toothless-dancing_232: -95552740
-      toothless-dancing_233: -2111816383
-      toothless-dancing_234: 1852762515
-      toothless-dancing_235: -1673998357
-      toothless-dancing_236: 1923874377
-      toothless-dancing_237: -1853129391
-      toothless-dancing_238: 273334772
-      toothless-dancing_239: 379309602
       toothless-dancing_24: 2006664121
-      toothless-dancing_240: 1577791618
-      toothless-dancing_241: -1221466333
-      toothless-dancing_242: -1074316064
-      toothless-dancing_243: -658666019
-      toothless-dancing_244: 638220937
-      toothless-dancing_245: -2057904292
-      toothless-dancing_246: -1789481347
-      toothless-dancing_247: -1536520614
-      toothless-dancing_248: -734258438
-      toothless-dancing_249: 1935594137
       toothless-dancing_25: -92854395
-      toothless-dancing_250: 1991149476
-      toothless-dancing_251: 2109792514
-      toothless-dancing_252: 382237232
-      toothless-dancing_253: -793194686
-      toothless-dancing_254: -2052084961
-      toothless-dancing_255: 705071681
-      toothless-dancing_256: 989632856
-      toothless-dancing_257: -1775243165
-      toothless-dancing_258: -72696660
-      toothless-dancing_259: 1581929768
       toothless-dancing_26: 593591365
-      toothless-dancing_260: 722204030
-      toothless-dancing_261: 837482255
-      toothless-dancing_262: -1815918903
-      toothless-dancing_263: 95895370
-      toothless-dancing_264: -314025868
-      toothless-dancing_265: -384299431
-      toothless-dancing_266: -296106677
-      toothless-dancing_267: 1911142004
-      toothless-dancing_268: 672474120
-      toothless-dancing_269: 81174492
       toothless-dancing_27: -592627483
       toothless-dancing_28: 389496496
       toothless-dancing_29: -646485615

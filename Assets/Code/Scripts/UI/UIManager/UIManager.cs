@@ -49,6 +49,7 @@ public class UIManager : MonoBehaviour
 
         if (ObscureMap == null)
             ObscureMap = new UnityEvent<float>();
+
         ObscureMap.AddListener(OnObscureMap);
         MiniMap.Clear();
     }

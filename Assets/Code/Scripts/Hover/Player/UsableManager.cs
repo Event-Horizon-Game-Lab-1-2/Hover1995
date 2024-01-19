@@ -10,12 +10,18 @@ public class UsableManager : MonoBehaviour
 
     public void useUsable(int usableIndex)
     {
+
+        if (ObtainedUsableAmount[usableIndex] <= 0)
+            return;
+
         if (UsableSpawnerData[usableIndex] != null)
         {
             Interactable usableInteractable = UsableSpawnerData[usableIndex].GetComponent<Interactable>();
-            if(usableInteractable != null && (ObtainedUsableAmount[usableIndex] > 0))
+            if(usableInteractable != null)
+            {
                 usableInteractable.Trigger(this);
-
+                ObtainedUsableAmount[usableIndex]--;
+            }
             else
                 Debug.LogWarning("Error while obtaining usable Interactable");
         }

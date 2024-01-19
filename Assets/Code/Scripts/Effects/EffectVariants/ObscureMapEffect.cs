@@ -10,5 +10,4 @@ public class ObscureMap : Effect
     {
         UIManager.ObscureMap.Invoke(effectTime);
     }
-
 }

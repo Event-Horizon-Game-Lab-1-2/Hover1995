@@ -23,8 +23,8 @@ public class MiniMap : MonoBehaviour
 
         if (easterEgg <= easterEggProbability)
             MinimapObscurer_EasterEgg.enabled = true;
-        else
-            MinimapObscurer.enabled = true;
+        
+        MinimapObscurer.enabled = true;
 
         StartCoroutine(ClearMap(time));
     }

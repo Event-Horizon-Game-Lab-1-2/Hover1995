@@ -12,7 +12,7 @@ public class UIUsables : MonoBehaviour
 
     public void SetUsableAmount(int p1, int p2, int p3)
     {
-        PowerUp1.SetText(p1.ToString());
+        PowerUp1.SetText(6.ToString());
         PowerUp1.SetText(p2.ToString());
         PowerUp1.SetText(p3.ToString());
     }
