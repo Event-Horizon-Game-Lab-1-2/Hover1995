@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpeedEditEffect : Effect
 {
@@ -10,6 +11,7 @@ public class SpeedEditEffect : Effect
 
     public override void ApplyEffect(GameObject gameObject)
     {
+        EffectsManager.SpeedEditUsed.Invoke(EffectTime);
         objectMovement = gameObject.GetComponent<Movement>();
         if(objectMovement != null )
             StartCoroutine(ApplyStop());

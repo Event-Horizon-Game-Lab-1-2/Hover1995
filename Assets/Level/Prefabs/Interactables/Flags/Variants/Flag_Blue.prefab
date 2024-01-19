@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 379464792092384478, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: EffectOnTrigger
       value: 
-      objectReference: {fileID: 6326300098684987983}
+      objectReference: {fileID: 5569221429265668428}
     - target: {fileID: 379464792092384478, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: CollisionLayer.m_Bits
       value: 128
@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e5af168899974bc4cbb0fd751e234925, type: 2}
+    - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: EnemylayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: PlayerlayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: m_Name
       value: Flag_Blue
@@ -76,27 +84,16 @@ PrefabInstance:
     - {fileID: 3275867369199466031, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6326300098684987983}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
---- !u!1 &9068227062565054165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+--- !u!114 &5569221429265668428 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
   m_PrefabInstance: {fileID: 2228802721748783818}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6326300098684987983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9068227062565054165}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 422136fa2b1b55e43b4669fce451c927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 1000
-  PlayerFlag: 1

@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class UsableManager : MonoBehaviour
 {
+    public static UnityEvent<int, int> ObtainUsable = new UnityEvent<int, int>();
+
     [Header("Usables")]
-    [SerializeField] SpawnerData[] UsableSpawnerData = new SpawnerData[3];
-    public int[] ObtainedUsableAmount = new int[3];
+    [SerializeField] Effect[] UsableEffect = new Effect[3];
+    [SerializeField] public static int[] ObtainedUsableAmount = new int[3];
 
     public void useUsable(int usableIndex)
     {
@@ -14,17 +17,16 @@ public class UsableManager : MonoBehaviour
         if (ObtainedUsableAmount[usableIndex] <= 0)
             return;
 
-        if (UsableSpawnerData[usableIndex] != null)
+        if (UsableEffect[usableIndex] != null)
         {
-            Interactable usableInteractable = UsableSpawnerData[usableIndex].GetComponent<Interactable>();
+            Effect usableInteractable = UsableEffect[usableIndex];
             if(usableInteractable != null)
             {
-                usableInteractable.Trigger(this);
+                usableInteractable.ApplyEffect(this);
                 ObtainedUsableAmount[usableIndex]--;
             }
             else
                 Debug.LogWarning("Error while obtaining usable Interactable");
         }
     }
-
 }

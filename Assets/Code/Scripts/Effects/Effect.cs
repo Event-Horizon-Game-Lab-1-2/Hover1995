@@ -13,6 +13,11 @@ public class Effect : MonoBehaviour
 
     }
 
+    public virtual void ApplyEffect(Transform transform)
+    {
+
+    }
+
     public virtual void ApplyEffect()
     {
 

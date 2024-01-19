@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,8 +7,10 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
-
+    //bool -> player team
+    //int -> Score
     public static UnityEvent<bool, int> FlagTaken;
+    public static UnityEvent<bool, int> FlagRemoved;
 
     public static GameManager Instance { get; private set; }
 
@@ -15,9 +18,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerManager Player;
 
     [SerializeField] private int FlagToWin = 3;
+    [SerializeField] private int PointForEachMissingEnemyFlag = 2500;
 
-    [HideInInspector] public int EnemyFlags;
-    [HideInInspector] public int PlayerFlags;
+    [HideInInspector] public int EnemyFlags { get; private set; } = 0;
+    [HideInInspector] public int PlayerFlags { get; private set; } = 0;
 
     public int Score = 0;
 
@@ -30,8 +34,11 @@ public class GameManager : MonoBehaviour
 
         if (FlagTaken == null)
             FlagTaken = new UnityEvent<bool, int>();
+        if (FlagRemoved == null)
+            FlagRemoved = new UnityEvent<bool, int>();
 
         FlagTaken.AddListener(OnFlagTaken);
+        FlagRemoved.AddListener(OnFlagRemoved);
     }
     
     private void OnFlagTaken(bool playerTeam, int flagScore)
@@ -51,11 +58,31 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void OnFlagRemoved(bool playerTeam, int flagScore)
+    {
+        if (playerTeam)
+        {
+            PlayerFlags--;
+            Score -= flagScore;
+            PlayerFlags = Mathf.Clamp(PlayerFlags, 0, FlagToWin);
+            if(Score < 0)
+                Score = 0;
+        }
+        else
+        {
+            EnemyFlags--;
+            EnemyFlags = Mathf.Clamp(EnemyFlags, 0, FlagToWin);
+        }
+    }
+
     private void EndGame()
     {
+        Score += PointForEachMissingEnemyFlag * (FlagToWin - EnemyFlags);
+
         if (PlayerFlags >= FlagToWin)
         {
             Debug.Log("PLAYER WON");
+
         }
         else
         {

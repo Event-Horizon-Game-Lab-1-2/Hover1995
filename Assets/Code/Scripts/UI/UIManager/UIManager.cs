@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
     [Tooltip("Flag counter")]
     [SerializeField] private UIFlagCounter UIFlagCounter;
     [Tooltip("Usable counter")]
-    [SerializeField] private UIUsables UIUSables;
+    [SerializeField] private UIUsables UIUsables;
     [Space]
     [Header("Minimap")]
     [Tooltip("Minimap")]
@@ -41,12 +41,10 @@ public class UIManager : MonoBehaviour
     [Tooltip("Player Reference used to show parameters")]
     [SerializeField] private PlayerManager PlayerManager;
 
-    private UsableManager PlayerUsable;
+    private float ObscurationTimeLeft = 0f;
 
     private void Awake()
     {
-        PlayerUsable = PlayerManager.GetComponent<UsableManager>();
-
         if (ObscureMap == null)
             ObscureMap = new UnityEvent<float>();
 
@@ -56,10 +54,22 @@ public class UIManager : MonoBehaviour
 
     private void FixedUpdate()
     {
+        //update all showed datas
         SetUISpeed(PlayerManager.GetLinearVelocity());
         SetUIScore(GameManager.Score);
         SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
-        SetUIUsable(PlayerUsable.ObtainedUsableAmount[0], PlayerUsable.ObtainedUsableAmount[1], PlayerUsable.ObtainedUsableAmount[2]);
+        SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
+
+        //update timers
+        UpdateTimers();
+
+        //map obscuration
+        if (ObscurationTimeLeft > 0)
+        {
+            ObscurationTimeLeft -= Time.fixedDeltaTime;
+            if (ObscurationTimeLeft <= 0f)
+                MiniMap.Clear();
+        }
     }
 
     private void SetUISpeed(float linearSpeed)
@@ -79,7 +89,7 @@ public class UIManager : MonoBehaviour
 
     private void SetUIUsable(int p1, int p2, int p3)
     {
-        UIUSables.SetUsableAmount(p1, p2, p3);
+        UIUsables.SetUsableAmount(p1, p2, p3);
     }
     
     public void SetDirection()
@@ -89,8 +99,15 @@ public class UIManager : MonoBehaviour
 
     public void OnObscureMap(float obscureTime)
     {
-        MiniMap.Obscure(obscureTime);
+        ObscurationTimeLeft = obscureTime;
+        MiniMap.Obscure();
     }
 
-    
+    public void UpdateTimers()
+    {
+        //EffectsManager.InvisibilityTime;
+        //EffectsManager.InvulnerabilityTimeTime;
+        //EffectsManager.SpeedEditTime;
+        //EffectsManager.WallTime;
+    }
 }

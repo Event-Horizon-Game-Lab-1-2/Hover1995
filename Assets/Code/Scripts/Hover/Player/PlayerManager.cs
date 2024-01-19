@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
@@ -9,8 +10,10 @@ public class PlayerManager : MonoBehaviour
     private UsableManager UsableManager;
 
     [SerializeField] KeyCode[] UsableKeys = new KeyCode[3]{KeyCode.A, KeyCode.S, KeyCode.D};
+    [SerializeField] private LayerMask LayerMaskWhenShield;
 
     [HideInInspector] public bool VisibleToEnemy = true;
+    [HideInInspector] public float Invulnerability = 0f;
 
     private void Awake()
     {
@@ -18,6 +21,7 @@ public class PlayerManager : MonoBehaviour
         StepController = GetComponent<StepController>();
         UsableManager = GetComponent<UsableManager>();
     }
+
     private void Update()
     {
         //Use the usable

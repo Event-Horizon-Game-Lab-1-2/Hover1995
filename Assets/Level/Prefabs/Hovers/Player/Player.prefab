@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3074695999514158210}
   - component: {fileID: 8417177133606169486}
-  - component: {fileID: 3666500682831059739}
   m_Layer: 7
   m_Name: MapCamera
   m_TagString: Untagged
@@ -84,14 +83,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3666500682831059739
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760174810382375660}
-  m_Enabled: 0
 --- !u!1 &1634830922328154356
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8672744753997866213}
   - component: {fileID: 2473429323958072778}
-  - component: {fileID: 9151198527902583686}
   m_Layer: 7
   m_Name: RearCamera
   m_TagString: Untagged
@@ -176,14 +166,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &9151198527902583686
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1634830922328154356}
-  m_Enabled: 0
 --- !u!1 &3337732852851302565
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +341,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5685487048811546214}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!1 &6389886768400716391
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +396,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a912d796bd3ef4d4a98fb8e4754cc918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UsableKeys: 610000007300000064000000
+  LayerMaskWhenShield:
+    serializedVersion: 2
+    m_Bits: 0
+  VisibleToEnemy: 1
+  Invulnerability: 0
 --- !u!114 &3375396037897559515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,6 +418,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  ObtainedUsableAmount: 020000000000000000000000
 --- !u!114 &2050302320432552736
 MonoBehaviour:
   m_ObjectHideFlags: 0

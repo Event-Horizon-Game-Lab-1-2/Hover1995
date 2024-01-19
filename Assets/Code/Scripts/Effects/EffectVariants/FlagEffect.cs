@@ -6,10 +6,27 @@ public class FlagEffect : Effect
 {
     [Tooltip("Score of the flag")]
     [SerializeField] private int ScoreValue = 1000;
-    [Tooltip("Define the flag team\nTrue = Player Flag\nFalse = Enemy Flag")]
-    [SerializeField] private bool PlayerFlag = false;
+    [SerializeField] private LayerMask PlayerlayerMask;
+    [SerializeField] private LayerMask EnemylayerMask;
+    [SerializeField] private bool RemoveFlagEffect = false;
     public override void ApplyEffect(GameObject gameObject)
     {
-        GameManager.FlagTaken.Invoke(PlayerFlag, ScoreValue);
+        if (gameObject == null)
+            return;
+
+        if (1<<gameObject.layer == PlayerlayerMask)
+        {
+            if (RemoveFlagEffect)
+                GameManager.FlagRemoved.Invoke(true, ScoreValue);
+            else
+                GameManager.FlagTaken.Invoke(true, ScoreValue);
+        }
+        if(1<<gameObject.layer == EnemylayerMask)
+        {
+            if (RemoveFlagEffect)
+                GameManager.FlagRemoved.Invoke(false, ScoreValue);
+            else
+                GameManager.FlagRemoved.Invoke(false, ScoreValue);
+        }
     }
 }

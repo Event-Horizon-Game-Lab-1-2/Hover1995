@@ -17,7 +17,7 @@ public class MiniMap : MonoBehaviour
         MinimapObscurer_EasterEgg.enabled = false;
     }
 
-    public void Obscure(float time)
+    public void Obscure()
     {
         float easterEgg = UnityEngine.Random.Range(0f, 1f);
 
@@ -25,14 +25,6 @@ public class MiniMap : MonoBehaviour
             MinimapObscurer_EasterEgg.enabled = true;
         
         MinimapObscurer.enabled = true;
-
-        StartCoroutine(ClearMap(time));
-    }
-
-    IEnumerator ClearMap(float duration)
-    {
-        yield return new WaitForSeconds(duration);
-        Clear();
     }
 
     public void Clear()

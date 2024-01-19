@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 379464792092384478, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: EffectOnTrigger
       value: 
-      objectReference: {fileID: -1627228062913238748}
+      objectReference: {fileID: 6460679408444054090}
     - target: {fileID: 379464792092384478, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: CollisionLayer.m_Bits
       value: 256
@@ -64,6 +64,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0de1a2539808643468ab3ad6d2f5493b, type: 2}
+    - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: EnemylayerMask.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: PlayerlayerMask.m_Bits
+      value: 128
+      objectReference: {fileID: 0}
     - target: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: m_Name
       value: Flag_Red
@@ -75,27 +83,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -1627228062913238748}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
---- !u!1 &7582364834602460627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+--- !u!114 &6460679408444054090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
   m_PrefabInstance: {fileID: 724908666165137868}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-1627228062913238748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7582364834602460627}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 422136fa2b1b55e43b4669fce451c927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreValue: 1000
-  PlayerFlag: 0
