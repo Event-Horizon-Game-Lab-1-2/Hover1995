@@ -42,11 +42,14 @@ public class UIManager : MonoBehaviour
     [SerializeField] private PlayerManager PlayerManager;
 
     private float ObscurationTimeLeft = 0f;
+    private UsableManager UsableManager;
 
     private void Awake()
     {
         if (ObscureMap == null)
             ObscureMap = new UnityEvent<float>();
+
+        UsableManager = PlayerManager.gameObject.GetComponent<UsableManager>();
 
         ObscureMap.AddListener(OnObscureMap);
         MiniMap.Clear();

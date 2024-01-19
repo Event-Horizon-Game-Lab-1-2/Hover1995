@@ -2324,7 +2324,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3375396037897559515, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
+      propertyPath: ObtainedUsableAmount.Array.data[0]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375396037897559515, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
       propertyPath: ObtainedUsableAmount.Array.data[1]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375396037897559515, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
+      propertyPath: ObtainedUsableAmount.Array.data[2]
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4118610890204603401, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}

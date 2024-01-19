@@ -1636,7 +1636,7 @@ MonoBehaviour:
   DirectionVisualizer: {fileID: 0}
   Score: {fileID: 7976504053731007704}
   UIFlagCounter: {fileID: 5754393679364200019}
-  UIUSables: {fileID: 543976098091937120}
+  UIUsables: {fileID: 0}
   MiniMap: {fileID: 3544049050144960068}
   RearViewMirror: {fileID: 8400000, guid: 90b072108d04604459ba88bb2282fd81, type: 2}
   GameManager: {fileID: 0}
@@ -2035,9 +2035,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b595c518b5c6c949ad7736331203882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUp1: {fileID: 5889955865985525565}
+  PowerUp1: {fileID: 6863061676579858938}
   PowerUp2: {fileID: 2608905724655208718}
-  PowerUp3: {fileID: 6863061676579858938}
+  PowerUp3: {fileID: 5889955865985525565}
   PowerUp2_Progress: {fileID: 1323176329576378592}
   PowerUp3_Progress: {fileID: 4746256051191473623}
 --- !u!222 &4926645143165987655

@@ -9,7 +9,7 @@ public class UsableManager : MonoBehaviour
 
     [Header("Usables")]
     [SerializeField] Effect[] UsableEffect = new Effect[3];
-    [SerializeField] public static int[] ObtainedUsableAmount = new int[3];
+    [SerializeField] public int[] ObtainedUsableAmount = new int[3];
 
     public void useUsable(int usableIndex)
     {
