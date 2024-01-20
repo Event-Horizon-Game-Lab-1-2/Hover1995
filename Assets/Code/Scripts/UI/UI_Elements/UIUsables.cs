@@ -20,13 +20,13 @@ public class UIUsables : MonoBehaviour
         PowerUp1.SetText(""+p3);
     }
 
-    public void SetProgress_Wall(float value)
+    public void SetProgress_Wall(float value, float startValue)
     {
-        PowerUp2_Progress.setProgress(value);
+        PowerUp2_Progress.setProgress(value/startValue);
     }
 
-    public void SetProgress_Invisibility(float value)
+    public void SetProgress_Invisibility(float value, float startValue)
     {
-        PowerUp3_Progress.setProgress(value);
+        PowerUp3_Progress.setProgress(value/startValue);
     }
 }

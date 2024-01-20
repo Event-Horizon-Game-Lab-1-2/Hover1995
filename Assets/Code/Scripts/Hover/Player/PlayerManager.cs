@@ -12,8 +12,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] KeyCode[] UsableKeys = new KeyCode[3]{KeyCode.A, KeyCode.S, KeyCode.D};
     [SerializeField] private LayerMask LayerMaskWhenShield;
 
-    [HideInInspector] public bool VisibleToEnemy = true;
-    [HideInInspector] public float Invulnerability = 0f;
+    [HideInInspector] public static bool VisibleToEnemy = true;
+    [HideInInspector] public static bool Invulnerability = false;
 
     private void Awake()
     {

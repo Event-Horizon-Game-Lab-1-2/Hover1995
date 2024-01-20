@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class WallEffect : Effect
@@ -7,30 +8,16 @@ public class WallEffect : Effect
     [Header("Parameters")]
     [SerializeField] float WallLifeTime = 9f;
     [SerializeField] float SpawnOffset_X = 2f;
-
-    public void Awake()
-    {
-        ApplyEffect();
-    }
+    [SerializeField] GameObject WallPrefab;
 
     public override void ApplyEffect(UsableManager gameObject)
     {
+        Debug.Log(this);
         Transform transform = gameObject.gameObject.transform;
         //send event
         EffectsManager.WallUsed.Invoke(WallLifeTime);
         //add wall at transform  position and rotation
-        Instantiate(this.gameObject, transform.localPosition - (transform.forward*SpawnOffset_X), transform.rotation);
-        
-        //remove after lifeTime
-        if(this.gameObject.activeSelf)
-            StartCoroutine(Effect());
-        
+        GameObject newObject = Instantiate(WallPrefab, transform.localPosition - (transform.forward*SpawnOffset_X), transform.rotation);
+        newObject.GetComponent<DestroyAfter>().SelfKill(WallLifeTime);
     }
-    
-    IEnumerator Effect()
-    {
-        yield return new WaitForSeconds(WallLifeTime);
-        Destroy(this.gameObject);
-    }
-
 }

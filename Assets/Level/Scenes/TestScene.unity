@@ -1267,10 +1267,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ceee0200a40254eaf194f9c43f6414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <InvulnerabilityTime>k__BackingField: 0
-  <WallTime>k__BackingField: 0
-  <InvisibilityTime>k__BackingField: 0
-  <SpeedEditTime>k__BackingField: 0
 --- !u!1 &584439131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1990,6 +1986,53 @@ MonoBehaviour:
   - {fileID: 1051614748}
   - {fileID: 1051614747}
   RespawnOnTaken: 0
+--- !u!1 &1129289900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1129289902}
+  - component: {fileID: 1129289901}
+  m_Layer: 0
+  m_Name: WallUsable
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1129289901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129289900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133403600a1f1bd44a49ae09500fa183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WallLifeTime: 9
+  SpawnOffset_X: 2
+  WallPrefab: {fileID: 1214120603669220069, guid: 2d66d7e17b0fb914589978cfd1fbe25a, type: 3}
+--- !u!4 &1129289902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129289900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 283.30307, y: 158.43535, z: -1.0745621}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174181588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2259,7 +2302,7 @@ PrefabInstance:
     - target: {fileID: 3375396037897559515, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
       propertyPath: UsableEffect.Array.data[1]
       value: 
-      objectReference: {fileID: -4928577516563181620, guid: 2d66d7e17b0fb914589978cfd1fbe25a, type: 3}
+      objectReference: {fileID: 1129289901}
     - target: {fileID: 3375396037897559515, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
       propertyPath: UsableSpawnerData.Array.data[0]
       value: 

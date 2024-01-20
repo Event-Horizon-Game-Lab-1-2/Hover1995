@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5140533399831812082}
   - component: {fileID: 8110912876261107065}
-  - component: {fileID: -4928577516563181620}
+  - component: {fileID: 6977656571616841576}
   m_Layer: 0
   m_Name: GeneratedWall
   m_TagString: Untagged
@@ -55,7 +55,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5, y: 5, z: 1}
   m_Center: {x: 0, y: 2.5, z: 0}
---- !u!114 &-4928577516563181620
+--- !u!114 &6977656571616841576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,12 +64,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1214120603669220069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 133403600a1f1bd44a49ae09500fa183, type: 3}
+  m_Script: {fileID: 11500000, guid: 86b66069c1b8b564aa37239fe75c1712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WallLifeTime: 9
-  SpawnOffset_X: 2
-  WallPrefab: {fileID: 0}
 --- !u!1 &6906782110029652322
 GameObject:
   m_ObjectHideFlags: 0

@@ -65,7 +65,7 @@ public class UIManager : MonoBehaviour
 
         //update timers
         UpdateTimers();
-
+        
         //map obscuration
         if (ObscurationTimeLeft > 0)
         {
@@ -108,9 +108,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateTimers()
     {
-        //EffectsManager.InvisibilityTime;
-        //EffectsManager.InvulnerabilityTimeTime;
-        //EffectsManager.SpeedEditTime;
-        //EffectsManager.WallTime;
+        UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
+        UIUsables.SetProgress_Invisibility(EffectsManager.InvisibilityTime, EffectsManager.InvisibilityStartTime);
     }
 }
