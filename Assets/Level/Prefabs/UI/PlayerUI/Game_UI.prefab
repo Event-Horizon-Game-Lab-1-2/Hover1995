@@ -203,7 +203,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 2068431934446934212}
+  CurrentImage: {fileID: 2068431934446934212}
+  MalusColor: {r: 1, g: 0, b: 0, a: 1}
+  BonusColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &470532665643624878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,7 +1189,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 9101178694689447285}
+  CurrentImage: {fileID: 9101178694689447285}
+  MalusColor: {r: 1, g: 0, b: 0, a: 1}
+  BonusColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &3450272940187509379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,7 +1624,7 @@ Transform:
   m_Children:
   - {fileID: 755997084612617282}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8426437742804724531
 MonoBehaviour:
@@ -2047,7 +2051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.9793825, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.9803922, g: 1, b: 0, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2641,7 +2645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 9119495341175794005}
+  CurrentImage: {fileID: 9119495341175794005}
+  MalusColor: {r: 1, g: 0, b: 0, a: 1}
+  BonusColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &7323377840541637290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 7875936485136632411}
+  CurrentImage: {fileID: 7875936485136632411}
+  MalusColor: {r: 1, g: 0, b: 0, a: 1}
+  BonusColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
 --- !u!1 &8166807657190176281
 GameObject:
   m_ObjectHideFlags: 0
@@ -2820,7 +2828,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3219849e8615f9243b9a9c74309ba01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1372000362631939972}
+  CurrentImage: {fileID: 1372000362631939972}
+  MalusColor: {r: 1, g: 0, b: 0, a: 1}
+  BonusColor: {r: 0, g: 0.4716981, b: 0.0502899, a: 1}
 --- !u!1 &8310794151449933013
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,6 +48,7 @@ public class UIManager : MonoBehaviour
 
     private float ObscurationTimeLeft = 0f;
     private UsableManager UsableManager;
+    private Movement PlayerMovement;
 
     private void Awake()
     {
@@ -55,6 +56,7 @@ public class UIManager : MonoBehaviour
             ObscureMap = new UnityEvent<float>();
 
         UsableManager = PlayerManager.gameObject.GetComponent<UsableManager>();
+        PlayerMovement = PlayerManager.gameObject.GetComponent<Movement>();
 
         ObscureMap.AddListener(OnObscureMap);
         MiniMap.Clear();
@@ -82,7 +84,7 @@ public class UIManager : MonoBehaviour
 
     private void SetUISpeed(float linearSpeed)
     {
-        SpeedVisualizer.setProgress(linearSpeed);
+        SpeedVisualizer.SetProgress(linearSpeed);
     }
 
     private void SetUIScore(int score)
@@ -107,10 +109,29 @@ public class UIManager : MonoBehaviour
     
     public void UpdateTimer()
     {
+        //usable
         UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
         UIUsables.SetProgress_Invisibility(EffectsManager.InvisibilityTime, EffectsManager.InvisibilityStartTime);
-        StopLight_Progress.setProgress( Mathf.Clamp(EffectsManager.SpeedEditTime, 0f, EffectsManager.SpeedEditStartTime) );
-        Shield_Progress.setProgress( Mathf.Clamp(EffectsManager.InvulnerabilityTime, 0f, EffectsManager.InvulnerabilityStartTime) );
+        //auto enabled collectible
+        //Speed Edit
+        //check if it can be updated
+        if(EffectsManager.SpeedEditStartTime > 0)
+        {
+            //Set color based on malus
+            if (PlayerMovement.SpeedLimiter > PlayerMovement.StartSpeedLimiter)
+                StopLight_Progress.SetMalus(false);
+            else
+                StopLight_Progress.SetMalus(true);
+            //update the progres bar
+            float stopLightProgress = Mathf.Clamp01(EffectsManager.SpeedEditTime/EffectsManager.SpeedEditStartTime);
+            StopLight_Progress.SetProgress(stopLightProgress);
+        }
+        //Invulnerability
+        if(EffectsManager.InvulnerabilityStartTime > 0)
+        {
+            float shieldProgress = Mathf.Clamp01(EffectsManager.InvulnerabilityTime / EffectsManager.InvulnerabilityStartTime);
+            Shield_Progress.SetProgress(shieldProgress);
+        }
     }
 
     public void SetPlayerHeightVisualizer()

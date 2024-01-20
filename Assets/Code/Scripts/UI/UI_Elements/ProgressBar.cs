@@ -5,10 +5,24 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    [SerializeField] private Image image;
+    [SerializeField] private Image CurrentImage;
 
-    public void setProgress(float progress)
+    [SerializeField] private Color MalusColor = Color.red;
+    [SerializeField] private Color BonusColor = Color.yellow;
+
+
+    private void Awake()
     {
-        image.fillAmount = progress;
+        CurrentImage.color = BonusColor;
+    }
+
+    public void SetProgress(float progress)
+    {
+        CurrentImage.fillAmount = progress;
+    }
+
+    public void SetMalus(bool malus)
+    {
+        CurrentImage.color = malus ? MalusColor : BonusColor;
     }
 }

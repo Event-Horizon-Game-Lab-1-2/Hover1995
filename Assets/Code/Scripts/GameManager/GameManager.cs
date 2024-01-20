@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get; private set; }
 
-    [SerializeField] UIManager UI;
     [SerializeField] PlayerManager Player;
 
     [SerializeField] private int FlagToWin = 3;

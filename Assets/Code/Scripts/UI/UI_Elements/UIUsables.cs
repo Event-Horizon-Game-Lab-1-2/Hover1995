@@ -22,11 +22,11 @@ public class UIUsables : MonoBehaviour
 
     public void SetProgress_Wall(float value, float startValue)
     {
-        PowerUp2_Progress.setProgress(value/startValue);
+        PowerUp2_Progress.SetProgress(value/startValue);
     }
 
     public void SetProgress_Invisibility(float value, float startValue)
     {
-        PowerUp3_Progress.setProgress(value/startValue);
+        PowerUp3_Progress.SetProgress(value/startValue);
     }
 }
