@@ -65,6 +65,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 0de1a2539808643468ab3ad6d2f5493b, type: 2}
     - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: Malus
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: EnemylayerMask.m_Bits
       value: 256
       objectReference: {fileID: 0}

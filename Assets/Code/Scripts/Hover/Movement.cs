@@ -28,6 +28,8 @@ public class Movement : MonoBehaviour
         [SerializeField] private float PositiveForce = 20f;
         [Tooltip("Is the force applied when going backward")]
         [SerializeField] private float RotationSpeed = 1f;
+        [Tooltip("Rapresent the max speed reachable by the player\nSpeed = Max Speed * Speed Limiter")]
+        [SerializeField] public float StartSpeedLimiter = 0.75f;
         [Space]
         [HideInInspector] public float SpeedLimiter;
         [HideInInspector] public float ClampedVelocity;
@@ -60,7 +62,8 @@ public class Movement : MonoBehaviour
     {
         Body = GetComponent<Rigidbody>();
         Body.velocity = Vector3.zero;
-        SpeedLimiter = 0.75f;
+
+        SpeedLimiter = StartSpeedLimiter;
     }
 
     public void Move(float direction)

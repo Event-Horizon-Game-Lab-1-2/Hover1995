@@ -10,7 +10,7 @@ public class EffectsManager : MonoBehaviour
     public static UnityEvent<float> InvisibilityUsed = new UnityEvent<float>();
     //Effect timers
     public static UnityEvent<float> InvulnerabilityUsed = new UnityEvent<float>();
-    public static UnityEvent<float> SpeedEditUsed = new UnityEvent<float>();
+    public static UnityEvent<float, bool> SpeedEditUsed = new UnityEvent<float, bool>();
 
     //Timers
     public static float InvulnerabilityTime { get; private set; } = 0f;
@@ -21,7 +21,10 @@ public class EffectsManager : MonoBehaviour
     public static float InvisibilityStartTime { get; private set; } = 0f;
     public static float SpeedEditTime { get; private set; } = 0f;
     public static float SpeedEditStartTime { get; private set; } = 0f;
-    
+
+    [Header("PlayerReference")]
+    [SerializeField] PlayerManager playerManager;
+
     private void Awake()
     {
         //create all unity events
@@ -36,12 +39,12 @@ public class EffectsManager : MonoBehaviour
             InvulnerabilityUsed = new UnityEngine.Events.UnityEvent<float>();
 
         if (SpeedEditUsed == null)
-            SpeedEditUsed = new UnityEvent<float>();
+            SpeedEditUsed = new UnityEvent<float, bool>();
 
         //add all listener
         WallUsed.AddListener(OnWallUsed);
         InvisibilityUsed.AddListener(OnInvisibilityEnabled);
-        InvulnerabilityUsed.AddListener(OnVulnerabilityUsed);
+        InvulnerabilityUsed.AddListener(OnInvulnerabilityUsed);
         SpeedEditUsed.AddListener(OnSpeedEditUsed);
     }
 
@@ -52,7 +55,10 @@ public class EffectsManager : MonoBehaviour
         {
             InvulnerabilityTime-=Time.fixedDeltaTime;
             if(InvulnerabilityTime < 0f)
+            {
+                PlayerManager.Invulnerability = false;
                 InvulnerabilityTime = 0f;
+            }
         }
 
         if (WallTime > 0)
@@ -73,13 +79,15 @@ public class EffectsManager : MonoBehaviour
         {
             SpeedEditTime-=Time.fixedDeltaTime;
             if(SpeedEditTime < 0f)
+            {
+                playerManager.GetComponent<Movement>().SpeedLimiter = playerManager.GetComponent<Movement>().StartSpeedLimiter;
                 SpeedEditTime = 0f;
+            }
         }
-
-
+        
     }
 
-    private void OnVulnerabilityUsed(float time)
+    private void OnInvulnerabilityUsed(float time)
     {
         InvulnerabilityStartTime = time;
         InvulnerabilityTime = time;
@@ -91,7 +99,7 @@ public class EffectsManager : MonoBehaviour
         WallTime = time;
     }
 
-    private void OnSpeedEditUsed(float time)
+    private void OnSpeedEditUsed(float time, bool malus)
     {
         SpeedEditStartTime = time;
         SpeedEditTime = time;
@@ -103,5 +111,9 @@ public class EffectsManager : MonoBehaviour
         InvisibilityTime = time;
     }
 
-
+    public static void ResetSpeedEdit()
+    {
+        SpeedEditTime = 0f;
+        SpeedEditStartTime = 0f;
+    }
 }

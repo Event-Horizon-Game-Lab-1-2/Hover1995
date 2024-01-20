@@ -131,18 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1918945389}
     m_Modifications:
+    - target: {fileID: 3014581166604200307, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3774835974377246330, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: m_Name
       value: Game_UI
       objectReference: {fileID: 0}
-    - target: {fileID: 5754393679364200019, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: FlagFull
-      value: 
-      objectReference: {fileID: 21300000, guid: b91056f7835852740a9c959efc2f4995, type: 3}
-    - target: {fileID: 5754393679364200019, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: FlagEmpty
-      value: 
-      objectReference: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
     - target: {fileID: 5874239021194813656, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -706,6 +702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e803bec41736ae4a9368eecf58523f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Malus: 0
+  EffectTime: 0
   JumpHeigh: 10
   GravityScale: 1
 --- !u!114 &254841700
@@ -1267,6 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9ceee0200a40254eaf194f9c43f6414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerManager: {fileID: 1259762078}
 --- !u!1 &584439131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,8 +1901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a225b2218a3cdce40bf867a99215f067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NewSpeedLimiter: 1
+  Malus: 0
   EffectTime: 5
+  NewSpeedLimiter: 1
 --- !u!1 &1051614745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2015,6 +2015,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133403600a1f1bd44a49ae09500fa183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Malus: 0
+  EffectTime: 0
   WallLifeTime: 9
   SpawnOffset_X: 2
   WallPrefab: {fileID: 1214120603669220069, guid: 2d66d7e17b0fb914589978cfd1fbe25a, type: 3}
@@ -2155,6 +2157,7 @@ GameObject:
   - component: {fileID: 1208603970}
   - component: {fileID: 1208603969}
   - component: {fileID: 1208603968}
+  - component: {fileID: 1208603974}
   m_Layer: 0
   m_Name: PowerUpSpawner
   m_TagString: Untagged
@@ -2197,6 +2200,7 @@ MonoBehaviour:
   - {fileID: 1208603970}
   - {fileID: 1208603969}
   - {fileID: 1208603968}
+  - {fileID: 1208603974}
   RespawnOnTaken: 1
 --- !u!114 &1208603968
 MonoBehaviour:
@@ -2287,6 +2291,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpawnerWithRespawn: {fileID: 1208603967}
   RespawnTime: 1
+--- !u!114 &1208603974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208603965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6976205205beae040bc56560782c7df3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractableToSpawn: {fileID: 2365054020013942279, guid: b32658f52ed91a9418884e97f5805ccf, type: 3}
+  MaxSpawnAmount: 2
+  SpawnProbability: 1
 --- !u!1001 &1259762066
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -109,4 +109,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6292967a95a6d9b449216a4e7db74089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  effectTime: 10
+  Malus: 1
+  EffectTime: 20

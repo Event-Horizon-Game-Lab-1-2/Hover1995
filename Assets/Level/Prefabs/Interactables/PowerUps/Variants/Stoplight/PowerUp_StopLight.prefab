@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 3431077680151426635, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
       propertyPath: m_Name
-      value: PowerUp_3
+      value: PowerUp_StopLight
       objectReference: {fileID: 0}
     - target: {fileID: 5867955526242800804, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
       propertyPath: m_RootOrder
@@ -60,8 +60,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6380933092952096454, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+      propertyPath: EffectOnTrigger
+      value: 
+      objectReference: {fileID: -5996736765297906016}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3431077680151426635, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -5996736765297906016}
   m_SourcePrefab: {fileID: 100100000, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+--- !u!1 &1634422195985459504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3431077680151426635, guid: b3b0742813740fc44901c46bb00b43d1, type: 3}
+  m_PrefabInstance: {fileID: 4121638819865321339}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-5996736765297906016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634422195985459504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a225b2218a3cdce40bf867a99215f067, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Malus: 0
+  NewSpeedLimiter: 0
+  EffectTime: 20

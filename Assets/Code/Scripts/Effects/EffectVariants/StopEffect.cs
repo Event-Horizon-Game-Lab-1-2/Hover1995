@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class StopEffect : Effect
 {
-    [SerializeField] private float EffectTime = 0f;
     private Movement objectMovement;
+    [SerializeField] LayerMask PlayerLayer;
 
     public override void ApplyEffect(GameObject gameObject)
     {
         objectMovement = gameObject.GetComponent<Movement>();
+        //check if id the player
+        if (PlayerLayer == 1 << gameObject.layer && PlayerManager.Invulnerability)
+            return;
         StartCoroutine(ApplyStop());
     }
 

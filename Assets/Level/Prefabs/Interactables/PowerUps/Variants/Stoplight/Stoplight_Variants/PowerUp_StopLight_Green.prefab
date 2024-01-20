@@ -8,10 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5996736765297906016, guid: 936cf0f9ed4e1f54688b4d9ce24d24b1, type: 3}
+      propertyPath: NewSpeedLimiter
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1634422195985459504, guid: 936cf0f9ed4e1f54688b4d9ce24d24b1, type: 3}
       propertyPath: m_Name
-      value: PowerUp_StopLight
+      value: PowerUp_StopLight_Green
       objectReference: {fileID: 0}
+    - target: {fileID: 2001321944908817325, guid: 936cf0f9ed4e1f54688b4d9ce24d24b1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7519932607786011615, guid: 936cf0f9ed4e1f54688b4d9ce24d24b1, type: 3}
       propertyPath: m_RootOrder
       value: 0

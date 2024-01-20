@@ -196,11 +196,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422136fa2b1b55e43b4669fce451c927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Malus: 0
+  EffectTime: 0
   ScoreValue: 1000
   PlayerlayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   EnemylayerMask:
     serializedVersion: 2
-    m_Bits: 0
-  RemoveFlagEffect: 0
+    m_Bits: 256

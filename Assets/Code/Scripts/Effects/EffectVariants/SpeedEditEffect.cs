@@ -6,14 +6,16 @@ using UnityEngine.Events;
 public class SpeedEditEffect : Effect
 {
     [SerializeField][Range(0f, 1f)] float NewSpeedLimiter = 0f;
-    [SerializeField] private float EffectTime = 0f;
     private Movement objectMovement;
 
     public override void ApplyEffect(GameObject gameObject)
     {
-        EffectsManager.SpeedEditUsed.Invoke(EffectTime);
+        if (Malus && PlayerManager.Invulnerability)
+            return;
+
+        EffectsManager.SpeedEditUsed.Invoke(EffectTime, Malus);
         objectMovement = gameObject.GetComponent<Movement>();
-        if(objectMovement != null )
+        if(objectMovement != null)
             StartCoroutine(ApplyStop());
     }
 

@@ -25,6 +25,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private UIFlagCounter UIFlagCounter;
     [Tooltip("Usable counter")]
     [SerializeField] private UIUsables UIUsables;
+    [Tooltip("Rapresent the stoplight timer")]
+    [SerializeField] private ProgressBar StopLight_Progress;
+    [Tooltip("Rapresent the shield timer")]
+    [SerializeField] private ProgressBar Shield_Progress;
     [Space]
     [Header("Minimap")]
     [Tooltip("Minimap")]
@@ -34,6 +38,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] public RenderTexture RearViewMirror;
     [Space]
 
+    [Header("REFERENCES")]
     [Header("Game Manager Reference")]
     [Tooltip("Game manager reference used to see datas")]
     [SerializeField] private GameManager GameManager;
@@ -64,13 +69,13 @@ public class UIManager : MonoBehaviour
         SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
 
         //update timers
-        UpdateTimers();
+        UpdateTimer();
         
         //map obscuration
         if (ObscurationTimeLeft > 0)
         {
             ObscurationTimeLeft -= Time.fixedDeltaTime;
-            if (ObscurationTimeLeft <= 0f)
+            if (ObscurationTimeLeft <= 0f || PlayerManager.Invulnerability)
                 MiniMap.Clear();
         }
     }
@@ -99,16 +104,25 @@ public class UIManager : MonoBehaviour
     {
        
     }
+    
+    public void UpdateTimer()
+    {
+        UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
+        UIUsables.SetProgress_Invisibility(EffectsManager.InvisibilityTime, EffectsManager.InvisibilityStartTime);
+        StopLight_Progress.setProgress( Mathf.Clamp01(EffectsManager.SpeedEditTime/EffectsManager.SpeedEditStartTime) );
+        Shield_Progress.setProgress( Mathf.Clamp01(EffectsManager.InvulnerabilityTime/EffectsManager.InvulnerabilityStartTime) );
+    }
 
+    public void SetPlayerHeightVisualizer()
+    {
+
+    }
+
+    #region EVENTS CALLBACKs
     public void OnObscureMap(float obscureTime)
     {
         ObscurationTimeLeft = obscureTime;
         MiniMap.Obscure();
     }
-
-    public void UpdateTimers()
-    {
-        UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
-        UIUsables.SetProgress_Invisibility(EffectsManager.InvisibilityTime, EffectsManager.InvisibilityStartTime);
-    }
+    #endregion
 }
