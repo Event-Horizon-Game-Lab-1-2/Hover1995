@@ -109,8 +109,8 @@ public class UIManager : MonoBehaviour
     {
         UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
         UIUsables.SetProgress_Invisibility(EffectsManager.InvisibilityTime, EffectsManager.InvisibilityStartTime);
-        StopLight_Progress.setProgress( Mathf.Clamp01(EffectsManager.SpeedEditTime/EffectsManager.SpeedEditStartTime) );
-        Shield_Progress.setProgress( Mathf.Clamp01(EffectsManager.InvulnerabilityTime/EffectsManager.InvulnerabilityStartTime) );
+        StopLight_Progress.setProgress( Mathf.Clamp(EffectsManager.SpeedEditTime, 0f, EffectsManager.SpeedEditStartTime) );
+        Shield_Progress.setProgress( Mathf.Clamp(EffectsManager.InvulnerabilityTime, 0f, EffectsManager.InvulnerabilityStartTime) );
     }
 
     public void SetPlayerHeightVisualizer()
