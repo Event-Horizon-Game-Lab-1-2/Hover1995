@@ -14,6 +14,7 @@ public class ProgressBar : MonoBehaviour
     private void Awake()
     {
         CurrentImage.color = BonusColor;
+        CurrentImage.fillAmount = 0f;
     }
 
     public void SetProgress(float progress)

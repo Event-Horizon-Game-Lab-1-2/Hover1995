@@ -18,11 +18,15 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int FlagToWin = 3;
     [SerializeField] private int PointForEachMissingEnemyFlag = 2500;
+    [Space]
+    [SerializeField] public float MaxHeight = 20f;
 
     [HideInInspector] public int EnemyFlags { get; private set; } = 0;
     [HideInInspector] public int PlayerFlags { get; private set; } = 0;
+    public static float PlayerHeightClamped;
 
-    public int Score = 0;
+    public static int Score = 0;
+    private Transform PlayerTransform;
 
     private void Start()
     {
@@ -38,8 +42,21 @@ public class GameManager : MonoBehaviour
 
         FlagTaken.AddListener(OnFlagTaken);
         FlagRemoved.AddListener(OnFlagRemoved);
+
+        PlayerTransform = Player.GetComponent<Transform>();
     }
-    
+
+    private void FixedUpdate()
+    {
+        PlayerHeightClamped = PlayerTransform.position.y;
+        if(PlayerHeightClamped > MaxHeight)
+        {
+            PlayerTransform.position = new Vector3(PlayerTransform.position.x , MaxHeight, PlayerTransform.position.z);
+        }
+        PlayerHeightClamped /= MaxHeight;
+        Mathf.Clamp01(PlayerHeightClamped);
+    }
+
     private void OnFlagTaken(bool playerTeam, int flagScore)
     {
         if(playerTeam)

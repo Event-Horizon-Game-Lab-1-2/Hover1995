@@ -10,6 +10,7 @@ public class UIUsables : MonoBehaviour
     [SerializeField] TMP_Text PowerUp2;
     [SerializeField] TMP_Text PowerUp3;
 
+    [SerializeField] ProgressBar PowerUp1_Progress;
     [SerializeField] ProgressBar PowerUp2_Progress;
     [SerializeField] ProgressBar PowerUp3_Progress;
 
@@ -18,6 +19,11 @@ public class UIUsables : MonoBehaviour
         PowerUp1.SetText(""+p1);
         PowerUp1.SetText(""+p2);
         PowerUp1.SetText(""+p3);
+    }
+
+    public void SetHeightProgress(float value, float startValue)
+    {
+        PowerUp1_Progress.SetProgress(value/startValue);
     }
 
     public void SetProgress_Wall(float value, float startValue)

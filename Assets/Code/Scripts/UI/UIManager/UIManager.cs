@@ -25,6 +25,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private UIFlagCounter UIFlagCounter;
     [Tooltip("Usable counter")]
     [SerializeField] private UIUsables UIUsables;
+    [Tooltip("Player height progress")]
+    [SerializeField] private ProgressBar PlayerHeight_Progress;
     [Tooltip("Rapresent the stoplight timer")]
     [SerializeField] private ProgressBar StopLight_Progress;
     [Tooltip("Rapresent the shield timer")]
@@ -41,7 +43,7 @@ public class UIManager : MonoBehaviour
     [Header("REFERENCES")]
     [Header("Game Manager Reference")]
     [Tooltip("Game manager reference used to see datas")]
-    [SerializeField] private GameManager GameManager;
+    [SerializeField] private GameManager GameManagerInstance;
     [Header("Player Reference")]
     [Tooltip("Player Reference used to show parameters")]
     [SerializeField] private PlayerManager PlayerManager;
@@ -67,7 +69,7 @@ public class UIManager : MonoBehaviour
         //update all showed datas
         SetUISpeed(PlayerManager.GetLinearVelocity());
         SetUIScore(GameManager.Score);
-        SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
+        SetUIFlag(GameManagerInstance.PlayerFlags, GameManagerInstance.EnemyFlags);
         SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
 
         //update timers
@@ -80,6 +82,9 @@ public class UIManager : MonoBehaviour
             if (ObscurationTimeLeft <= 0f || PlayerManager.Invulnerability)
                 MiniMap.Clear();
         }
+
+        //update height
+        SetPlayerHeightVisualizer(GameManager.PlayerHeightClamped);
     }
 
     private void SetUISpeed(float linearSpeed)
@@ -102,12 +107,12 @@ public class UIManager : MonoBehaviour
         UIUsables.SetUsableAmount(p1, p2, p3);
     }
     
-    public void SetDirection()
+    private void SetDirection()
     {
        
     }
     
-    public void UpdateTimer()
+    private void UpdateTimer()
     {
         //usable
         UIUsables.SetProgress_Wall(EffectsManager.WallTime, EffectsManager.WallStartTime);
@@ -134,9 +139,9 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void SetPlayerHeightVisualizer()
+    private void SetPlayerHeightVisualizer(float height)
     {
-
+        PlayerHeight_Progress.SetProgress(height);
     }
 
     #region EVENTS CALLBACKs

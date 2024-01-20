@@ -440,13 +440,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8426437742804724531, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: GameManager
-      value: 
-      objectReference: {fileID: 573176733}
-    - target: {fileID: 8426437742804724531, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: PlayerManager
       value: 
       objectReference: {fileID: 1259762078}
+    - target: {fileID: 8426437742804724531, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
+      propertyPath: GameManagerInstance
+      value: 
+      objectReference: {fileID: 573176733}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1221,7 +1221,7 @@ MonoBehaviour:
   Player: {fileID: 1259762078}
   FlagToWin: 3
   PointForEachMissingEnemyFlag: 2500
-  Score: 0
+  MaxHeight: 20
 --- !u!4 &573176734
 Transform:
   m_ObjectHideFlags: 0
