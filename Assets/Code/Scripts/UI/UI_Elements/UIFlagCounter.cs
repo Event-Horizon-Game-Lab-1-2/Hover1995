@@ -9,31 +9,26 @@ public class UIFlagCounter : MonoBehaviour
     [Header("Images")]
     [SerializeField] Image[] PlayerFlag = new Image[3];
     [SerializeField] Image[] EnemyFlag = new Image[3];
-    [Header("Colors")]
-    [SerializeField] Color EmptyColor = Color.white;
-    [SerializeField] Color FillColorPlayer = Color.blue;
-    [SerializeField] Color FillColorEnemy = Color.red;
-
-    //[SerializeField] Image FlagsEmpty;
-    //[SerializeField] Image FlagsFull;
+    [SerializeField] Sprite FlagEmpty;
+    [SerializeField] Sprite FlagFull;
 
     public void SetScore(int playerScore, int enemyScore)
     {
         //empty color
         for (int i = 0; i < PlayerFlag.Length; i++)
         {
-            PlayerFlag[i].color = EmptyColor;
-            EnemyFlag[i].color = EmptyColor;
+            PlayerFlag[i].sprite = FlagEmpty;
+            EnemyFlag[i].sprite = FlagEmpty;
         }
-
+        //update player sprite
         for (int i = 0; i < playerScore; i++)
         {
-            PlayerFlag[i].color = FillColorPlayer;
+            PlayerFlag[i].sprite = FlagFull;
         }
-
+        //update enemy sprite
         for (int i = 0; i < enemyScore; i++)
         {
-            EnemyFlag[i].color = FillColorEnemy;
+            EnemyFlag[i].sprite = FlagFull;
         }
     }
 }

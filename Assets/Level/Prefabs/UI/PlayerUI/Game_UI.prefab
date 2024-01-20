@@ -143,7 +143,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -346,7 +346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   MiniMapView: {fileID: 8400000, guid: 4c1240607ff3cab4bb75fbf01bf911be, type: 2}
   MinimapObscurer: {fileID: 6471527241444349974}
   MinimapObscurer_EasterEgg: {fileID: 619268623449783763}
-  easterEggProbability: 0.1
+  easterEggProbability: 1
 --- !u!222 &7699603377938495033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   DirectionVisualizer: {fileID: 0}
   Score: {fileID: 7976504053731007704}
   UIFlagCounter: {fileID: 5754393679364200019}
-  UIUsables: {fileID: 0}
+  UIUsables: {fileID: 543976098091937120}
   MiniMap: {fileID: 3544049050144960068}
   RearViewMirror: {fileID: 8400000, guid: 90b072108d04604459ba88bb2282fd81, type: 2}
   GameManager: {fileID: 0}
@@ -2244,9 +2244,10 @@ MonoBehaviour:
   - {fileID: 7453134141982697130}
   - {fileID: 6231868704223674519}
   - {fileID: 8521357917636246111}
-  EmptyColor: {r: 1, g: 1, b: 1, a: 1}
-  FillColorPlayer: {r: 0, g: 0, b: 1, a: 1}
-  FillColorEnemy: {r: 1, g: 0, b: 0, a: 1}
+  FlagEmpty: {fileID: 0}
+  FlagFull: {fileID: 0}
+  PlayerColor: {r: 0, g: 0, b: 1, a: 1}
+  EnemyColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!222 &7899367475119474529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2476,7 +2477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2552,7 +2553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 737482874, guid: 171cf4cb590cfd040919c82b4596d08a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

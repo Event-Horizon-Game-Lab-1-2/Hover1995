@@ -131,58 +131,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1918945389}
     m_Modifications:
-    - target: {fileID: 3544049050144960068, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: easterEggProbability
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737151159745101164, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737151159745101164, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_Color.g
-      value: 0.047058582
-      objectReference: {fileID: 0}
-    - target: {fileID: 3737151159745101164, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3774835974377246330, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: m_Name
       value: Game_UI
       objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.17658329
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.9898066
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.005729167
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.85622
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4214358379279843930, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 5754393679364200019, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
+      propertyPath: FlagFull
+      value: 
+      objectReference: {fileID: 21300000, guid: b91056f7835852740a9c959efc2f4995, type: 3}
+    - target: {fileID: 5754393679364200019, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
+      propertyPath: FlagEmpty
+      value: 
+      objectReference: {fileID: 21300000, guid: 8ca74b230f66f7849840d59bb3a895ba, type: 3}
     - target: {fileID: 5874239021194813656, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -227,10 +187,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8426437742804724531, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-      propertyPath: UIUsables
-      value: 
-      objectReference: {fileID: 79852801}
     - target: {fileID: 8426437742804724531, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
       propertyPath: GameManager
       value: 
@@ -281,17 +237,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &79852801 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 543976098091937120, guid: 3a9a88c965a16fd4faf5786962747788, type: 3}
-  m_PrefabInstance: {fileID: 20204238}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b595c518b5c6c949ad7736331203882, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &98078551
 GameObject:
   m_ObjectHideFlags: 0
