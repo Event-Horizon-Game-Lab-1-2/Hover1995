@@ -17,8 +17,8 @@ public class UIUsables : MonoBehaviour
     public void SetUsableAmount(int p1, int p2, int p3)
     {
         PowerUp1.SetText(""+p1);
-        PowerUp1.SetText(""+p2);
-        PowerUp1.SetText(""+p3);
+        PowerUp2.SetText(""+p2);
+        PowerUp3.SetText(""+p3);
     }
 
     public void SetHeightProgress(float value, float startValue)

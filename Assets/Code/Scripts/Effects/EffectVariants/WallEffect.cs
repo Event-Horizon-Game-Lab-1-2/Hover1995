@@ -12,7 +12,6 @@ public class WallEffect : Effect
 
     public override void ApplyEffect(UsableManager gameObject)
     {
-        Debug.Log(this);
         Transform transform = gameObject.gameObject.transform;
         //send event
         EffectsManager.WallUsed.Invoke(WallLifeTime);

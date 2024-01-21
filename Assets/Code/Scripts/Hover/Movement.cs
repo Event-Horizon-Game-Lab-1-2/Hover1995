@@ -144,9 +144,9 @@ public class Movement : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position + TriggerOffset, TriggerSize);
     }
 
-    //retrun always null
+    
     private bool OnGround() {
-        return Physics2D.OverlapCircle(transform.position + TriggerOffset, TriggerSize, GroundLayer);
+        return Physics.CheckSphere(transform.position + TriggerOffset, TriggerSize, GroundLayer);
     }
 
     public void Halt()

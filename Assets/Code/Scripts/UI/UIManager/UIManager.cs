@@ -62,6 +62,7 @@ public class UIManager : MonoBehaviour
 
         ObscureMap.AddListener(OnObscureMap);
         MiniMap.Clear();
+
     }
 
     private void FixedUpdate()
