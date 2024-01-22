@@ -120,7 +120,6 @@ public class UIManager : MonoBehaviour
     {
         UIUsables.SetUsableAmount(p1, p2, p3);
     }
-    
     private void SetDirection()
     {
        

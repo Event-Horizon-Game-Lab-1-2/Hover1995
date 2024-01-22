@@ -5,16 +5,16 @@ using UnityEngine.Events;
 
 public class UsableManager : MonoBehaviour
 {
-    public static UnityEvent<int, int> ObtainUsable;
+    public static UnityEvent<int, int> ObtainUsable = new UnityEvent<int, int>();
 
     [Header("Usables")]
     [SerializeField] Effect[] UsableEffect = new Effect[3];
-    [SerializeField] public int[] ObtainedUsableAmount = new int[3];
+    [SerializeField] int MaxusableAmount = 9;
+    [HideInInspector] public int[] ObtainedUsableAmount = new int[3] {0,0,0};
 
     private void Awake()
     {
-        if (ObtainUsable != null)
-            ObtainUsable = new UnityEvent<int, int>();
+        ObtainUsable.AddListener(OnObtainUsable);
     }
 
     public void useUsable(int usableIndex)
@@ -34,5 +34,11 @@ public class UsableManager : MonoBehaviour
             else
                 Debug.LogWarning("Error while obtaining usable Interactable");
         }
+    }
+
+    private void OnObtainUsable(int index, int quantity)
+    {
+        if (ObtainedUsableAmount[index] < MaxusableAmount)
+            ObtainedUsableAmount[index] += quantity;
     }
 }

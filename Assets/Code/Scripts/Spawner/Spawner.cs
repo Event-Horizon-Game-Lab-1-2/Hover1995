@@ -33,7 +33,7 @@ public class Spawner : MonoBehaviour
         //spawn all objects
         for (int i = 0; i < ObjectsToGenerate.Length; i++)
         {
-            for (int j = 0; j < ObjectsToGenerate[i].MaxSpawnAmount; j++)
+            for (int j = 0; j < ObjectsToGenerate[i].StartSpawnAmount; j++)
             {
                 Interactable newObject = ObjectsToGenerate[i].InteractableToSpawn;
                 Transform newposition = PositionController.GetRandomPosition();
