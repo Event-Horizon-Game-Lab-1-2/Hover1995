@@ -4,6 +4,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -39,6 +40,10 @@ public class UIManager : MonoBehaviour
     [Tooltip("Rear view mirror")]
     [SerializeField] public RenderTexture RearViewMirror;
     [Space]
+    [Header("Invisibility Effect")]
+    [Tooltip("Invisibility Panel")]
+    [SerializeField] public Image InvisibilityPanel;
+    [Space]
 
     [Header("REFERENCES")]
     [Header("Game Manager Reference")]
@@ -63,6 +68,8 @@ public class UIManager : MonoBehaviour
         ObscureMap.AddListener(OnObscureMap);
         MiniMap.Clear();
 
+        InvisibilityPanel.enabled = false;
+
     }
 
     private void FixedUpdate()
@@ -86,6 +93,12 @@ public class UIManager : MonoBehaviour
 
         //update height
         SetPlayerHeightVisualizer(GameManager.PlayerHeightClamped);
+
+        //update invisibility effect
+        if (EffectsManager.InvisibilityTime > 0)
+            InvisibilityPanel.enabled = true;
+        else
+            InvisibilityPanel.enabled = false;
     }
 
     private void SetUISpeed(float linearSpeed)

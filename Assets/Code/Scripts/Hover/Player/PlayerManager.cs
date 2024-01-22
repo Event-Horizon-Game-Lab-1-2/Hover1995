@@ -13,7 +13,6 @@ public class PlayerManager : MonoBehaviour
 
     [HideInInspector] public static bool VisibleToEnemy = true;
     [HideInInspector] public static bool Invulnerability;
-
     private void Awake()
     {
         PlayerMovement = GetComponent<Movement>();
