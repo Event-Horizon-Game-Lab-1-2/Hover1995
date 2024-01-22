@@ -2277,7 +2277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableToSpawn: {fileID: 1102051089937534226, guid: 3054f3436b0761d4fa96003f594adb6e, type: 3}
-  StartSpawnAmount: 0
+  StartSpawnAmount: 3
   SpawnProbability: 1
 --- !u!114 &1051614748
 MonoBehaviour:
@@ -2292,7 +2292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractableToSpawn: {fileID: 1993526127920778772, guid: 8ffbf6622c0df194885923440881efc8, type: 3}
-  StartSpawnAmount: 0
+  StartSpawnAmount: 3
   SpawnProbability: 1
 --- !u!114 &1051614749
 MonoBehaviour:

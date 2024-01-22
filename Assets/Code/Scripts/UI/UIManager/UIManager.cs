@@ -108,7 +108,15 @@ public class UIManager : MonoBehaviour
 
     private void SetUIScore(int score)
     {
-        Score.SetText(score.ToString());
+        string fancyScore = score.ToString();
+        int missingChar = 8-fancyScore.Length;
+        fancyScore = "";
+        for (int i = 0; i < missingChar; i++)
+        {
+            fancyScore += '0';
+        }
+        fancyScore += score;
+        Score.SetText(fancyScore);
     }
 
     private void SetUIFlag(int playerF, int enemyF)
