@@ -138,14 +138,6 @@ public class Movement : MonoBehaviour
         }
         #endregion
     }
-
-    private void OnDrawGizmos()
-    {
-        //GROUND CHECK
-        Gizmos.color = GroundCheckColor;
-        Gizmos.DrawWireSphere(transform.position + TriggerOffset, TriggerSize);
-    }
-    
     private bool IsGrounded() {
         return Physics.CheckSphere(transform.position + TriggerOffset, TriggerSize, GroundLayer);
     }
@@ -155,6 +147,7 @@ public class Movement : MonoBehaviour
         CanMove = false;
         Body.velocity = Vector3.zero;
         LinearVelocity = 0f;
+        ClampedVelocity = 0f;
     }
 
     public void Continue()
@@ -162,5 +155,11 @@ public class Movement : MonoBehaviour
         CanMove = true;
     }
 
+    private void OnDrawGizmos()
+    {
+        //GROUND CHECK
+        Gizmos.color = GroundCheckColor;
+        Gizmos.DrawWireSphere(transform.position + TriggerOffset, TriggerSize);
+    }
 }
 

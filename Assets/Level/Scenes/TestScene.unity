@@ -2767,6 +2767,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 60220886}
     m_Modifications:
     - target: {fileID: 2050302320432552736, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
+      propertyPath: RotationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2050302320432552736, guid: 575f8ee994989e247a7c7ea5910d8c14, type: 3}
       propertyPath: GroundCheckColor.b
       value: 0
       objectReference: {fileID: 0}
