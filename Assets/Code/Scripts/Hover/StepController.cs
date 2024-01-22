@@ -63,14 +63,20 @@ public class StepController : MonoBehaviour
             Debug.DrawRay(rays[i].origin, rays[i].direction * rayLenght, RayColor, Time.deltaTime);
     }
 
-    //Rays lenght is divided by 2
     private bool IsAStep(Ray[] rays, float rayLenght)
     {
-        for (int i = 0; i < rays.Length / 2; i++)
+        bool result = false;
+        //upperrays
+        for (int i = rays.Length / 2; i < rays.Length; i++)
             if (Physics.Raycast(rays[i], out RaycastHit hit, rayLenght, StepLayerMask))
-                return true;
+                return false;
 
-        return false;
+        //lower rays
+        for (int i = 0; i < rays.Length/2; i++)
+            if (Physics.Raycast(rays[i], out RaycastHit hit, rayLenght, StepLayerMask))
+                result = true;
+
+        return result;
     }
 
     private void OnDrawGizmos()
