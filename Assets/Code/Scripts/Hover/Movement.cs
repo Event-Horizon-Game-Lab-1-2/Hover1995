@@ -8,54 +8,54 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     #region PARAMETERS
-        #region Acceleration
-        [Header("Acceleration parameters")]
-        [Tooltip("Acceleration curve of the movement")]
-        [SerializeField] private AnimationCurve AccelerationCurve;
-        [Tooltip("How fast the acceleration is, Acceleration = Acceleration curve * Acceleration Speed * time + Initial Acceleration")]
-        [SerializeField][Range(0.1f, 5.0f)] private float AccelerationSpeed = 1;
-        [Tooltip("Start Value of the acceleration, Acceleration = Acceleration curve * Acceleration Speed * time + Initial Acceleration")]
-        [SerializeField][Range(0.0f, 1.0f)] private float InitialAcceleration = 0.1f;
-        [Space]
-        //used in fixed update to get the acceleration
-        private float AccelerationTimer;
-        #endregion
-        #region Speeds
-        [Header("Speed parameters")]
-        [Tooltip("Max speed going forward")]
-        [SerializeField][Range(0.1f, 50.0f)] public float MaxSpeed = 30.0f;
-        [Tooltip("Is the force applied when going forward")]
-        [SerializeField] private float PositiveForce = 20f;
-        [Tooltip("Is the force applied when going backward")]
-        [SerializeField] private float RotationSpeed = 1f;
-        [Tooltip("Rapresent the max speed reachable by the player\nSpeed = Max Speed * Speed Limiter")]
-        [SerializeField] public float StartSpeedLimiter = 0.75f;
-        [Space]
-        [HideInInspector] public float SpeedLimiter;
-        [HideInInspector] public float ClampedVelocity;
-        [HideInInspector] private float LinearVelocity = 0f;
-        [HideInInspector] private bool CanMove = true;
-        #endregion
-        #region Ground Check
-        [Header("Ground Controller")]
-        [Tooltip("Layer to check ")]
-        [SerializeField] private LayerMask GroundLayer;
-        [SerializeField] private Vector3 TriggerOffset = Vector3.zero;
-        [SerializeField] private float TriggerSize = 0.2f;
-        [SerializeField] private Color GroundCheckColor = Color.cyan;
-        [Space]
-        #endregion
-        #region Collision
-        [Header("Collision")]
-        [Tooltip("Is the force applied when colliding with a collider")]
-        [SerializeField] private float MaxBounceForce = 20f;
-        [SerializeField] private float MinBounceForce = 10f;
-        [SerializeField] private Color CollisionLine = Color.cyan;
-        [Space]
-        private bool CanBounce = true;
-        //physic based
-        private Rigidbody Body;
-        #endregion
+    #region Acceleration
+    [Header("Acceleration parameters")]
+    [Tooltip("Acceleration curve of the movement")]
+    [SerializeField] private AnimationCurve AccelerationCurve;
+    [Tooltip("How fast the acceleration is, Acceleration = Acceleration curve * Acceleration Speed * time + Initial Acceleration")]
+    [SerializeField][Range(0.1f, 5.0f)] private float AccelerationSpeed = 1;
+    [Tooltip("Start Value of the acceleration, Acceleration = Acceleration curve * Acceleration Speed * time + Initial Acceleration")]
+    [SerializeField][Range(0.0f, 1.0f)] private float InitialAcceleration = 0.1f;
+    [Space]
+    //used in fixed update to get the acceleration
+    private float AccelerationTimer;
+    #endregion
+    #region Speeds
+    [Header("Speed parameters")]
+    [Tooltip("Max speed going forward")]
+    [SerializeField][Range(0.1f, 50.0f)] public float MaxSpeed = 30.0f;
+    [Tooltip("Is the force applied when going forward")]
+    [SerializeField] private float PositiveForce = 20f;
+    [Tooltip("Is the force applied when going backward")]
+    [SerializeField] private float RotationSpeed = 1f;
+    [Tooltip("Rapresent the max speed reachable by the player\nSpeed = Max Speed * Speed Limiter")]
+    [SerializeField] public float StartSpeedLimiter = 0.75f;
+    [Space]
+    [HideInInspector] public float SpeedLimiter;
+    [HideInInspector] public float ClampedVelocity;
+    [HideInInspector] private float LinearVelocity = 0f;
+    [HideInInspector] private bool CanMove = true;
+    #endregion
+    #region Ground Check
+    [Header("Ground Controller")]
+    [Tooltip("Layer to check ")]
+    [SerializeField] private LayerMask GroundLayer;
+    [SerializeField] private Vector3 TriggerOffset = Vector3.zero;
+    [SerializeField] private float TriggerSize = 0.2f;
+    [SerializeField] private Color GroundCheckColor = Color.cyan;
+    [Space]
+    public bool OnGround = false;
+    #endregion
+    #region Collision
+    [Header("Collision")]
+    [Tooltip("Is the force applied when colliding with a collider")]
+    [SerializeField] private float MaxBounceForce = 20f;
+    [SerializeField] private float MinBounceForce = 10f;
+    [SerializeField] private Color CollisionLine = Color.cyan;
+    [Space]
+    //physic based
+    private Rigidbody Body;
+    #endregion
     #endregion
 
     void Awake()
@@ -87,6 +87,8 @@ public class Movement : MonoBehaviour
 
         LinearVelocity = Vector3.Distance(Vector3.zero, new Vector3(Body.velocity.x, 0.0f, Body.velocity.z));
         ClampedVelocity = LinearVelocity / MaxSpeed;
+
+        OnGround = IsGrounded();
     }
 
     public void Rotate(float rotation)
@@ -101,7 +103,7 @@ public class Movement : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         #region Bounce
-        if (!CanBounce)
+        if (!OnGround)
             return;
         if (collision.contacts[0].normal.y == 0)
         {
@@ -143,9 +145,8 @@ public class Movement : MonoBehaviour
         Gizmos.color = GroundCheckColor;
         Gizmos.DrawWireSphere(transform.position + TriggerOffset, TriggerSize);
     }
-
     
-    private bool OnGround() {
+    private bool IsGrounded() {
         return Physics.CheckSphere(transform.position + TriggerOffset, TriggerSize, GroundLayer);
     }
 
