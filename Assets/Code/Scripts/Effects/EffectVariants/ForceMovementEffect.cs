@@ -10,7 +10,6 @@ public class ForceMovementEffect : Effect
 {
     [SerializeField] float RotationSpeed = 30f;
     [SerializeField] float ForceSpeedDuration = 5f;
-    [SerializeField] float StartLinearMovementAfter = 2f;
     private Transform Ref;
     private Transform StartRef;
 
