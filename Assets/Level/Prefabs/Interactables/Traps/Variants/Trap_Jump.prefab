@@ -33,6 +33,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -97,5 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e803bec41736ae4a9368eecf58523f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Malus: 0
+  EffectTime: 0
   JumpHeigh: 20
   GravityScale: 1
