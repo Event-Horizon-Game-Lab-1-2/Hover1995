@@ -25,7 +25,7 @@ public class FlagEffect : Effect
             if (Malus)
                 GameManager.FlagRemoved.Invoke(false, ScoreValue);
             else
-                GameManager.FlagRemoved.Invoke(false, ScoreValue);
+                GameManager.FlagTaken.Invoke(false, ScoreValue);
         }
     }
 }

@@ -16,17 +16,6 @@ public class ForceMovementEffect : Effect
     private bool Rotated = false;
     private float TimeCount = 0f;
 
-    private void FixedUpdate()
-    {
-        if(Ref != null)
-        {
-            Ref.rotation = Quaternion.Lerp(StartRef.rotation, transform.rotation, TimeCount * RotationSpeed);
-            TimeCount = TimeCount + Time.deltaTime;
-            if (TimeCount>=1f)
-                Rotated = true;
-        }
-    }
-
     public override void ApplyEffect(GameObject gameObject)
     {
         Rotated = false;
@@ -39,12 +28,14 @@ public class ForceMovementEffect : Effect
     IEnumerator ForceMovement()
     {
         PlayerManager.ForceRotation.Invoke();
-        Debug.Log("Hh");
         while (!Rotated)
         {
+            Ref.rotation = Quaternion.Lerp(StartRef.rotation, transform.rotation, TimeCount * RotationSpeed);
+            TimeCount += Time.deltaTime;
+            if (TimeCount >= 1f)
+                Rotated = true;
             yield return null;
         }
-        Debug.Log("gg");
         PlayerManager.ForceMovement.Invoke();
         yield return new WaitForSeconds(ForceSpeedDuration);
         PlayerManager.FreeMovement.Invoke();

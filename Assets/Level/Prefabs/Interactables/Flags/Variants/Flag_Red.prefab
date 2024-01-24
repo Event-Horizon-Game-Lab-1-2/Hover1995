@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: CollisionLayer.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 853388486070826283, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 890170421248712646, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -82,7 +86,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7149073203745567775, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

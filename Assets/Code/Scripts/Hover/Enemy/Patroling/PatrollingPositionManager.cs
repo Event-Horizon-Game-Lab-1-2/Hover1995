@@ -11,25 +11,22 @@ public class PatrollingPositionManager : MonoBehaviour
 
     private int currentTarget = 0;
 
-    private Transform GetNextTarget()
+    public Transform GetStartTransform()
     {
+        currentTarget = Random.Range(0, PatrollingPositions.Length);
+        return PatrollingPositions[currentTarget];
+    }
+
+    public Transform GetNextTarget()
+    {
+        Transform newTarget = PatrollingPositions[currentTarget];
         currentTarget++;
-        return PatrollingPositions[currentTarget - 1];
+
+        if (currentTarget >= PatrollingPositions.Length)
+            currentTarget = 0;
+
+        return newTarget;
     }
-
-    public Transform GetCloserWanderingPos(Transform currentPos)
-    {
-        Transform closerPoint = currentPos;
-        for (int i = 0; i < PatrollingPositions.Length; i++)
-        {
-            if (Vector3.Distance(PatrollingPositions[i].position, closerPoint.position) < 0f)
-            {
-
-            }
-        }
-        return closerPoint;
-    }
-
 
 #if UNITY_EDITOR
     private void OnDrawGizmos()

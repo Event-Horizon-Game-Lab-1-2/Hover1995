@@ -68,7 +68,7 @@ public class Movement : MonoBehaviour
 
     public void Move(float direction)
     {
-        if(!CanMove)
+        if (!CanMove)
             return;
 
         #region Acceleration
@@ -95,8 +95,8 @@ public class Movement : MonoBehaviour
     {
         #region Rotation
         //Rotate the Y axis
-        if (Input.GetAxisRaw("Horizontal") != 0)
-            transform.Rotate(new Vector3(0, 1, 0) * RotationSpeed * rotation, Space.World);
+        transform.Rotate(Vector3.up * RotationSpeed * rotation/*, Space.World*/);
+
         #endregion
     }
 

@@ -98,7 +98,6 @@ public class GameManager : MonoBehaviour
         if (PlayerFlags >= FlagToWin)
         {
             Debug.Log("PLAYER WON");
-
         }
         else
         {
