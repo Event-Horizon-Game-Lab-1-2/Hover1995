@@ -63,6 +63,20 @@ public class Spawner : MonoBehaviour
         InteractableList.Add(Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity));
     }
     
+    public void Spawn(int indexToSpawn)
+    {
+        //Update old spawn object position
+        updateInteractableList();
+
+        Interactable newObject = ObjectsToGenerate[indexToSpawn].InteractableToSpawn;
+
+        //choose a random position
+        Transform newposition = PositionController.GetRandomPosition();
+
+        InteractableTransforms.Add(newposition);
+        InteractableList.Add(Instantiate<Interactable>(newObject, newposition.position, Quaternion.identity));
+    }
+
     public void recoverSpawnPoint(Transform transform)
     {
         //free that position

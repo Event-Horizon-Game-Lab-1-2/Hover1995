@@ -77,7 +77,7 @@ public class UIManager : MonoBehaviour
         //update all showed datas
         SetUISpeed(PlayerManager.GetLinearVelocity());
         SetUIScore(GameManager.Score);
-        SetUIFlag(GameManagerInstance.PlayerFlags, GameManagerInstance.EnemyFlags);
+        SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
         SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
 
         //update timers

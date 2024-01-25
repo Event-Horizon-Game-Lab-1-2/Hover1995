@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
     [SerializeField][Range(0.1f, 50.0f)] public float MaxSpeed = 30.0f;
     [Tooltip("Is the force applied when going forward")]
     [SerializeField] private float PositiveForce = 20f;
-    [Tooltip("Is the force applied when going backward")]
+    [Tooltip("Is the rotation speed")]
     [SerializeField] private float RotationSpeed = 1f;
     [Tooltip("Rapresent the max speed reachable by the player\nSpeed = Max Speed * Speed Limiter")]
     [SerializeField] public float StartSpeedLimiter = 0.75f;
@@ -94,6 +94,9 @@ public class Movement : MonoBehaviour
     public void Rotate(float rotation)
     {
         #region Rotation
+        if (rotation == 0)
+            return;
+
         //Rotate the Y axis
         transform.Rotate(Vector3.up * RotationSpeed * rotation/*, Space.World*/);
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SpawnerManager : MonoBehaviour
+public class InteractableSpawnerTrigger : MonoBehaviour
 {
     [SerializeField] private Spawner SpawnerWithRespawn;
     [SerializeField][Range(0.1f, 10f)] private float RespawnTime = 1f;

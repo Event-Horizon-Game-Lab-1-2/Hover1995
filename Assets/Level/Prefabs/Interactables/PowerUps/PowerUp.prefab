@@ -54,6 +54,7 @@ MonoBehaviour:
     m_Bits: 128
   EffectOnTrigger: {fileID: 0}
   RemoveOnTrigger: 1
+  SendRespawnRequest: 1
 --- !u!54 &8806643319921618492
 Rigidbody:
   m_ObjectHideFlags: 0

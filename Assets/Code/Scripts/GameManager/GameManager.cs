@@ -21,14 +21,14 @@ public class GameManager : MonoBehaviour
     [Space]
     [SerializeField] public float MaxHeight = 20f;
 
-    [HideInInspector] public int EnemyFlags { get; private set; } = 0;
-    [HideInInspector] public int PlayerFlags { get; private set; } = 0;
+    [HideInInspector] public static int EnemyFlags { get; private set; } = 0;
+    [HideInInspector] public static int PlayerFlags { get; private set; } = 0;
     public static float PlayerHeightClamped;
 
     public static int Score = 0;
     private Transform PlayerTransform;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
             Instance = this;

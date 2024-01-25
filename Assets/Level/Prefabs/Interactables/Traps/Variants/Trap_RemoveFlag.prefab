@@ -20,6 +20,14 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.5235849
       objectReference: {fileID: 0}
+    - target: {fileID: 2773078898068465980, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: EffectOnTrigger
+      value: 
+      objectReference: {fileID: 350700794173235208}
+    - target: {fileID: 2773078898068465980, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: CollisionLayer.m_Bits
+      value: 384
+      objectReference: {fileID: 0}
     - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -67,5 +75,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 525109053321969513, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 350700794173235208}
   m_SourcePrefab: {fileID: 100100000, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+--- !u!1 &3465025913427492780 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 525109053321969513, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+  m_PrefabInstance: {fileID: 3990102766738899141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &350700794173235208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3465025913427492780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422136fa2b1b55e43b4669fce451c927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Malus: 1
+  EffectTime: 0
+  ScoreValue: 1000
+  PlayerlayerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  EnemylayerMask:
+    serializedVersion: 2
+    m_Bits: 256

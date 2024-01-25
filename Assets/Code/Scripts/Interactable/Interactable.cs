@@ -5,10 +5,11 @@ public class Interactable : MonoBehaviour
     [SerializeField] LayerMask CollisionLayer;
     [SerializeField] Effect EffectOnTrigger;
     [SerializeField] bool RemoveOnTrigger = true;
+    [SerializeField] bool SendRespawnRequest = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (1 << other.gameObject.layer == CollisionLayer)
+        if(CollisionLayer == (CollisionLayer | (1<< other.gameObject.layer) ))
         {
             if(EffectOnTrigger != null)
             {
@@ -19,7 +20,9 @@ public class Interactable : MonoBehaviour
             
             if(RemoveOnTrigger)
             {
-                SpawnerManager.InteractableTriggred.Invoke();
+                if(SendRespawnRequest)
+                    InteractableSpawnerTrigger.InteractableTriggred.Invoke();
+
                 Destroy(this.gameObject);
             }
         }

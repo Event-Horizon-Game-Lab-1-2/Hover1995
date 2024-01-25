@@ -80,6 +80,9 @@ public class EnemyController : MonoBehaviour
             if (Vector3.Distance(transform.position, ChasingObject.transform.position) < LeaveChaseDistance)
             {
                 Agent.SetDestination(ChasingObject.transform.position);
+                //if is chasing player
+                if (ChasingObject.GetComponent<PlayerManager>() != null)
+                    IsChasing = PlayerManager.VisibleToEnemy;
             }
             else
             {
@@ -88,8 +91,6 @@ public class EnemyController : MonoBehaviour
                 Agent.SetDestination(TargetTransform.position);
             }
         }
-
-        Debug.Log(Agent.velocity.magnitude);
     }
 
     private void UpdateRays()
@@ -107,6 +108,7 @@ public class EnemyController : MonoBehaviour
             if(Physics.Raycast(ray, out RaycastHit hit, RaysLenght, TargetLayer))
             {
                 ChasingObject = hit.collider.gameObject;
+
                 if (ChasingObject.GetComponent<PlayerManager>() == null)
                     IsChasing = true;
                 else
@@ -124,6 +126,7 @@ public class EnemyController : MonoBehaviour
             if (Physics.Raycast(ray, out RaycastHit hit, RaysLenght, TargetLayer))
             {
                 ChasingObject = hit.collider.gameObject;
+
                 if (ChasingObject.GetComponent<PlayerManager>() == null)
                     IsChasing = true;
                 else
