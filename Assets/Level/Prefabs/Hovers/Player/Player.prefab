@@ -316,7 +316,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 90
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -397,11 +397,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UsableKeys: 610000007300000064000000
-  LayerMaskWhenShield:
-    serializedVersion: 2
-    m_Bits: 0
-  VisibleToEnemy: 1
-  Invulnerability: 0
 --- !u!114 &3375396037897559515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,11 +409,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc70c8b80e681e94a8b2dd532feb15a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UsableSpawnerData:
+  UsableEffect:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  ObtainedUsableAmount: 020000000000000000000000
+  MaxusableAmount: 9
+  ObtainedUsableAmount: 000000000000000000000000
 --- !u!114 &2050302320432552736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,9 +453,10 @@ MonoBehaviour:
     m_RotationOrder: 4
   AccelerationSpeed: 5
   InitialAcceleration: 0.2
-  MaxSpeed: 30
-  PositiveForce: 20
-  RotationSpeed: 1
+  MaxSpeed: 35
+  PositiveForce: 35
+  RotationSpeed: 1.5
+  StartSpeedLimiter: 0.75
   SpeedLimiter: 1
   ClampedVelocity: 0
   GroundLayer:
@@ -467,7 +464,8 @@ MonoBehaviour:
     m_Bits: 8
   TriggerOffset: {x: 0, y: 0, z: 0}
   TriggerSize: 0.2
-  GroundCheckColor: {r: 0, g: 1, b: 1, a: 1}
+  GroundCheckColor: {r: 1, g: 0.1767104, b: 0, a: 1}
+  OnGround: 0
   MaxBounceForce: 20
   MinBounceForce: 10
   CollisionLine: {r: 0, g: 1, b: 1, a: 1}
@@ -483,8 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9766f4768a307943941711a31c06311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartY: 0.25
-  StepHeight: 0.75
+  StartY: 0.1
+  StepHeight: 1.5
   StepDetectorLenght: 2.2
   StepDetectorStartLenght: 1.5
   StepRayAperture: {x: 0.87, y: 0, z: 0}
