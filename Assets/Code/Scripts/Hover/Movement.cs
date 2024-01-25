@@ -35,6 +35,7 @@ public class Movement : MonoBehaviour
     [HideInInspector] public float ClampedVelocity;
     [HideInInspector] private float LinearVelocity = 0f;
     [HideInInspector] private bool CanMove = true;
+    [HideInInspector] public static Vector3 AppliedForce = Vector3.zero;
     #endregion
     #region Ground Check
     [Header("Ground Controller")]
@@ -80,7 +81,10 @@ public class Movement : MonoBehaviour
 
         //Adding Force
         if (direction != 0 && LinearVelocity < MaxSpeed * SpeedLimiter)
-            Body.AddForce(transform.forward * PositiveForce * acceleration * direction);
+        {
+            AppliedForce = transform.forward * PositiveForce * acceleration * direction;
+            Body.AddForce(AppliedForce);
+        }
         else
             AccelerationTimer = 0.0f;
         #endregion
@@ -98,7 +102,7 @@ public class Movement : MonoBehaviour
             return;
 
         //Rotate the Y axis
-        transform.Rotate(Vector3.up * RotationSpeed * rotation/*, Space.World*/);
+        transform.Rotate(Vector3.up * RotationSpeed * rotation, Space.World);
 
         #endregion
     }

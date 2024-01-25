@@ -79,6 +79,7 @@ public class UIManager : MonoBehaviour
         SetUIScore(GameManager.Score);
         SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
         SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
+        SetDirection();
 
         //update timers
         UpdateTimer();
@@ -130,7 +131,7 @@ public class UIManager : MonoBehaviour
     }
     private void SetDirection()
     {
-       
+        DirectionVisualizer.VisualizeDirection();
     }
     
     private void UpdateTimer()
