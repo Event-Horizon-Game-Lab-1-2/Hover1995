@@ -316,7 +316,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 90
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   MaxusableAmount: 9
-  ObtainedUsableAmount: 020000000000000000000000
+  ObtainedUsableAmount: 000000000000000000000000
 --- !u!114 &2050302320432552736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -453,9 +453,9 @@ MonoBehaviour:
     m_RotationOrder: 4
   AccelerationSpeed: 5
   InitialAcceleration: 0.2
-  MaxSpeed: 30
-  PositiveForce: 20
-  RotationSpeed: 1
+  MaxSpeed: 35
+  PositiveForce: 35
+  RotationSpeed: 1.5
   StartSpeedLimiter: 0.75
   SpeedLimiter: 1
   ClampedVelocity: 0
@@ -464,7 +464,7 @@ MonoBehaviour:
     m_Bits: 8
   TriggerOffset: {x: 0, y: 0, z: 0}
   TriggerSize: 0.2
-  GroundCheckColor: {r: 0, g: 1, b: 1, a: 1}
+  GroundCheckColor: {r: 1, g: 0.1767104, b: 0, a: 1}
   OnGround: 0
   MaxBounceForce: 20
   MinBounceForce: 10
@@ -481,8 +481,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9766f4768a307943941711a31c06311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartY: 0.25
-  StepHeight: 0.75
+  StartY: 0.1
+  StepHeight: 1.5
   StepDetectorLenght: 2.2
   StepDetectorStartLenght: 1.5
   StepRayAperture: {x: 0.87, y: 0, z: 0}
@@ -515,7 +515,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!65 &4698702671107664507
