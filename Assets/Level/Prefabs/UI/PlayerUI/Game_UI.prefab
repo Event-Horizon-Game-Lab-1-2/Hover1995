@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6085865153893806466}
   - component: {fileID: 8486226178332943977}
   - component: {fileID: 3827106026185384743}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,6 +77,141 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &103116816181167571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455611685600039070}
+  - component: {fileID: 6396626631147131729}
+  - component: {fileID: 3463681741681525581}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1455611685600039070
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103116816181167571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 697988147531693399}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6396626631147131729
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103116816181167571}
+  m_CullTransparentMesh: 1
+--- !u!114 &3463681741681525581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103116816181167571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Ah AH Funny empty text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13fb0b8a262695b4da769cfa6144e097, type: 2}
+  m_sharedMaterial: {fileID: -6861238156320581720, guid: 13fb0b8a262695b4da769cfa6144e097, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &187745794886701688
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +223,7 @@ GameObject:
   - component: {fileID: 6153296088592042368}
   - component: {fileID: 4331251133090315356}
   - component: {fileID: 6231868704223674519}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EnemyFlag2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,58 +288,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &283029035387040746
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2583032367673617325}
-  - component: {fileID: 18396743752675691}
-  m_Layer: 0
-  m_Name: DirectionVisualizer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2583032367673617325
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283029035387040746}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3863088703713598740}
-  m_Father: {fileID: 755997084612617282}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 410.53802, y: 73.02411}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &18396743752675691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283029035387040746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee253dff4bb5f514fb57f90ba6120dbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Image: {fileID: 3568186406499127672}
-  Player: {fileID: 0}
 --- !u!1 &371336722842818480
 GameObject:
   m_ObjectHideFlags: 0
@@ -215,7 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1163631129344292399}
   - component: {fileID: 2154844100077524038}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: LinearSpeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +352,7 @@ GameObject:
   - component: {fileID: 809610287822005087}
   - component: {fileID: 6289888476770403808}
   - component: {fileID: 7453134141982697130}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EnemyFlag1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -345,7 +428,7 @@ GameObject:
   - component: {fileID: 1447443205726402270}
   - component: {fileID: 4764644079301364233}
   - component: {fileID: 7283159147539433938}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerFlag2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +504,7 @@ GameObject:
   - component: {fileID: 8339588224359196262}
   - component: {fileID: 7436098809354008383}
   - component: {fileID: 2068431934446934212}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +580,7 @@ GameObject:
   - component: {fileID: 6328492219998221715}
   - component: {fileID: 5227909011225675553}
   - component: {fileID: 4730106662241730296}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI_Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +656,7 @@ GameObject:
   - component: {fileID: 5145472143927317889}
   - component: {fileID: 7879869463906616154}
   - component: {fileID: 3777160769879898148}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerFlag3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,7 +733,7 @@ GameObject:
   - component: {fileID: 3056448936840192807}
   - component: {fileID: 2763313861248618797}
   - component: {fileID: 1240388462129976422}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,8 +760,8 @@ RectTransform:
   - {fileID: 1163631129344292399}
   - {fileID: 6996585101208294108}
   - {fileID: 4526594305981481369}
-  - {fileID: 2583032367673617325}
   - {fileID: 6328492219998221715}
+  - {fileID: 697988147531693399}
   m_Father: {fileID: 5874239021194813656}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -749,7 +832,84 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
+--- !u!1 &2332571691944973403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 697988147531693399}
+  - component: {fileID: 8082534281260567945}
+  - component: {fileID: 8658257188626837725}
+  m_Layer: 5
+  m_Name: End of game Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &697988147531693399
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332571691944973403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1455611685600039070}
+  m_Father: {fileID: 755997084612617282}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 325.361, y: 219.509}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8082534281260567945
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332571691944973403}
+  m_CullTransparentMesh: 1
+--- !u!114 &8658257188626837725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2332571691944973403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2363841846295977484
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,7 +921,7 @@ GameObject:
   - component: {fileID: 7752255634928506544}
   - component: {fileID: 8042496488900087987}
   - component: {fileID: 6863061676579858938}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable3_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -898,7 +1058,7 @@ GameObject:
   - component: {fileID: 5776631839104612812}
   - component: {fileID: 3050859364602436398}
   - component: {fileID: 838355806846151755}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -974,7 +1134,7 @@ GameObject:
   - component: {fileID: 4560571868889008058}
   - component: {fileID: 8442549835326086671}
   - component: {fileID: 5889955865985525565}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable1_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1202,7 +1362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6653211421459342499}
   - component: {fileID: 1323176329576378592}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WallTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,7 +1414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6447986523468246012}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UsableCounters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1609,7 +1769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5874239021194813656}
   - component: {fileID: 8426437742804724531}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Game_UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1630,7 +1790,7 @@ Transform:
   m_Children:
   - {fileID: 755997084612617282}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8426437742804724531
 MonoBehaviour:
@@ -1655,6 +1815,8 @@ MonoBehaviour:
   MiniMap: {fileID: 3544049050144960068}
   RearViewMirror: {fileID: 8400000, guid: 90b072108d04604459ba88bb2282fd81, type: 2}
   InvisibilityPanel: {fileID: 4730106662241730296}
+  EndOFGameImage: {fileID: 8658257188626837725}
+  EndOFGameText: {fileID: 3463681741681525581}
   GameManagerInstance: {fileID: 0}
   PlayerManager: {fileID: 0}
 --- !u!1 &3791326446127796996
@@ -1668,7 +1830,7 @@ GameObject:
   - component: {fileID: 1249069504490000206}
   - component: {fileID: 7916978215738231537}
   - component: {fileID: 9101178694689447285}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,82 +1895,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3885234588222546213
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3863088703713598740}
-  - component: {fileID: 912454243873157429}
-  - component: {fileID: 3568186406499127672}
-  m_Layer: 0
-  m_Name: Line
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &3863088703713598740
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3885234588222546213}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2583032367673617325}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 5}
-  m_Pivot: {x: 0, y: 0.5}
---- !u!222 &912454243873157429
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3885234588222546213}
-  m_CullTransparentMesh: 1
---- !u!114 &3568186406499127672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3885234588222546213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 0
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &4370512041270593561
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1906,7 @@ GameObject:
   - component: {fileID: 3974001868143039437}
   - component: {fileID: 5920324620271058179}
   - component: {fileID: 9119495341175794005}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1894,7 +1980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7276709860307523601}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UsableTimers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1935,7 +2021,7 @@ GameObject:
   - component: {fileID: 5230858871236475290}
   - component: {fileID: 5558919301967987489}
   - component: {fileID: 7875936485136632411}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,7 +2097,7 @@ GameObject:
   - component: {fileID: 1229729734508736518}
   - component: {fileID: 6335537658795869197}
   - component: {fileID: 7755416933655952174}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2174,7 @@ GameObject:
   - component: {fileID: 6111434675327202193}
   - component: {fileID: 1906550230281905459}
   - component: {fileID: 1372000362631939972}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,7 +2250,7 @@ GameObject:
   - component: {fileID: 2938131904325851409}
   - component: {fileID: 1951425010358420034}
   - component: {fileID: 3340860329746781967}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2241,7 +2327,7 @@ GameObject:
   - component: {fileID: 8008344812040381763}
   - component: {fileID: 6642642368852618053}
   - component: {fileID: 4063561839461493188}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2392,7 +2478,7 @@ GameObject:
   - component: {fileID: 543976098091937120}
   - component: {fileID: 4926645143165987655}
   - component: {fileID: 2956063264546314286}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UIUsables
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2590,7 +2676,7 @@ GameObject:
   - component: {fileID: 8186781212300870448}
   - component: {fileID: 3011093924719710215}
   - component: {fileID: 258637565460176575}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2667,7 +2753,7 @@ GameObject:
   - component: {fileID: 5754393679364200019}
   - component: {fileID: 7899367475119474529}
   - component: {fileID: 2465730550308270533}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UIFlagCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2768,7 +2854,7 @@ GameObject:
   - component: {fileID: 1753281035370814193}
   - component: {fileID: 265775570523635916}
   - component: {fileID: 1755332368889086933}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2844,7 +2930,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2152843120418370389}
   - component: {fileID: 4746256051191473623}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InvisibilityTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2898,7 +2984,7 @@ GameObject:
   - component: {fileID: 8759767039803472172}
   - component: {fileID: 5262855545008037501}
   - component: {fileID: 9116766166483624995}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Progress_back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2974,7 +3060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4526594305981481369}
   - component: {fileID: 5749971064625017009}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ShieldTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3027,7 +3113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5843510654447721715}
   - component: {fileID: 6867062508376704179}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: JumpVisualizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,7 +3166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6996585101208294108}
   - component: {fileID: 4429401639659798170}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: SpeedEditTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3134,7 +3220,7 @@ GameObject:
   - component: {fileID: 4073371813406788970}
   - component: {fileID: 8449530757951682197}
   - component: {fileID: 8521357917636246111}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EnemyFlag3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3210,7 +3296,7 @@ GameObject:
   - component: {fileID: 1063167077834659095}
   - component: {fileID: 3844443586370039509}
   - component: {fileID: 3737151159745101164}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PlayerFlag1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3286,7 +3372,7 @@ GameObject:
   - component: {fileID: 7096376751147020356}
   - component: {fileID: 2226573744849025040}
   - component: {fileID: 2199369559323778610}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3360,7 +3446,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8676200623581393088}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UsableArt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3487,7 @@ GameObject:
   - component: {fileID: 2835395699535009834}
   - component: {fileID: 5716650468026621625}
   - component: {fileID: 7976504053731007704}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3538,7 +3624,7 @@ GameObject:
   - component: {fileID: 27033097749286991}
   - component: {fileID: 7433257787645699240}
   - component: {fileID: 2608905724655208718}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable2_Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3675,7 +3761,7 @@ GameObject:
   - component: {fileID: 837655818811753251}
   - component: {fileID: 9032660846626838234}
   - component: {fileID: 2824395708823327344}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Usable1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

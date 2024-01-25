@@ -23,7 +23,11 @@ public class GameManager : MonoBehaviour
 
     [HideInInspector] public static int EnemyFlags { get; private set; } = 0;
     [HideInInspector] public static int PlayerFlags { get; private set; } = 0;
-    public static float PlayerHeightClamped;
+    
+    [HideInInspector] public static float PlayerHeightClamped;
+
+    [SerializeField] private String VictoryText = "WON";
+    [SerializeField] private String DefeatText = "LOST";
 
     public static int Score = 0;
     private Transform PlayerTransform;
@@ -78,15 +82,23 @@ public class GameManager : MonoBehaviour
     {
         if (playerTeam)
         {
-            PlayerFlags--;
-            Score -= flagScore;
+            if(PlayerFlags > 0)
+            {
+                PlayerFlags--;
+                Score -= flagScore;
+                FlagSpawnerTrigger.FlagRemoved.Invoke(playerTeam, flagScore);
+            }
             PlayerFlags = Mathf.Clamp(PlayerFlags, 0, FlagToWin);
             if(Score < 0)
                 Score = 0;
         }
         else
         {
-            EnemyFlags--;
+            if (EnemyFlags > 0)
+            {
+                EnemyFlags--;
+                FlagSpawnerTrigger.FlagRemoved.Invoke(playerTeam, flagScore);
+            }
             EnemyFlags = Mathf.Clamp(EnemyFlags, 0, FlagToWin);
         }
     }
@@ -97,11 +109,13 @@ public class GameManager : MonoBehaviour
 
         if (PlayerFlags >= FlagToWin)
         {
-            Debug.Log("PLAYER WON");
+            UIManager.EndGame.Invoke(VictoryText);
+            Player.GetComponent<Movement>().Halt();
         }
         else
         {
-            Debug.Log("ENEMY WON");
+            UIManager.EndGame.Invoke(DefeatText);
+            Player.GetComponent<Movement>().Halt();
         }
     }
 

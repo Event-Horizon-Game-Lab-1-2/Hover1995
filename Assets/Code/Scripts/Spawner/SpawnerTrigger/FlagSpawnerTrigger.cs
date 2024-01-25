@@ -6,27 +6,20 @@ using UnityEngine.Events;
 public class FlagSpawnerTrigger : MonoBehaviour
 {
     [SerializeField] Spawner Spawner;
+    public static UnityEvent<bool, int> FlagRemoved = new UnityEvent<bool, int>();
 
-    private void Start()
+    private void Awake()
     {
-        if (GameManager.Instance != null)
-            GameManager.FlagRemoved.AddListener(SpawnFlag);
-        else
-            Debug.LogWarning("Unable To get Game Manager Listener");
+        FlagRemoved.AddListener(SpawnFlag);
     }
 
+    
     //bool -> player team
     private void SpawnFlag(bool team, int score)
     {
         if (team)
-        {
-            if(GameManager.PlayerFlags+1>=0)
-                Spawner.Spawn(0);
-        }
+            Spawner.Spawn(0);
         else
-        {
-            if (GameManager.EnemyFlags+1>=0)
-                Spawner.Spawn(1);
-        }
+            Spawner.Spawn(1);
     }
 }

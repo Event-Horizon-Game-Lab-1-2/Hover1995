@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PatrollingPositions: {fileID: 0}
-  PatrollingSafeMargin: 1
+  PatrollingSafeMargin: 1.5
   StunSecAfterBounce: 0.5
   RaysAmount: 8
   RaysLenght: 60
@@ -58,10 +58,9 @@ MonoBehaviour:
   MinBounceForce: 10
   TargetLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   ChasingSpeedMultiplier: 0.5
   LeaveChaseDistance: 80
-  IsChasing: 0
 --- !u!195 &2246565346170560549
 NavMeshAgent:
   m_ObjectHideFlags: 0

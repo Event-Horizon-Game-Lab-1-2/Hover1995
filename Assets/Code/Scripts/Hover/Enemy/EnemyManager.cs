@@ -29,7 +29,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] float ChasingSpeedMultiplier = 0.5f;
     [SerializeField] float LeaveChaseDistance = 30f;
 
-    [SerializeField] private bool IsChasing = false;
+    private bool IsChasing = false;
+    private bool SpeedIncreased = false;
     private bool IsStunned = false;
 
     GameObject ChasingObject;

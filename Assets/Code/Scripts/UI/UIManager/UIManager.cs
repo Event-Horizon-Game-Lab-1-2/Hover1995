@@ -10,14 +10,11 @@ public class UIManager : MonoBehaviour
 {
 
     public static UnityEvent<float> ObscureMap = new UnityEvent<float>();
+    public static UnityEvent<string> EndGame = new UnityEvent<string>();
 
     [Header("UI Elements Speeds")]
     [Tooltip("Show the Player Acceleration")]
     [SerializeField] public ProgressBar SpeedVisualizer;
-    [Space]
-
-    [Header("Direction visulizer")]
-    [SerializeField] public DirectionVisualizer DirectionVisualizer;
     [Space]
     [Header("Counters")]
     [Tooltip("Game score")]
@@ -43,6 +40,11 @@ public class UIManager : MonoBehaviour
     [Header("Invisibility Effect")]
     [Tooltip("Invisibility Panel")]
     [SerializeField] public Image InvisibilityPanel;
+    [Header("End Of Game")]
+    [Tooltip("panel shown at the end of the game")]
+    [SerializeField] private Image EndOFGameImage;
+    [Tooltip("panel shown at the end of the game")]
+    [SerializeField] private TMP_Text EndOFGameText;
     [Space]
 
     [Header("REFERENCES")]
@@ -61,15 +63,19 @@ public class UIManager : MonoBehaviour
     {
         if (ObscureMap == null)
             ObscureMap = new UnityEvent<float>();
+        if (EndGame == null)
+            EndGame = new UnityEvent<string>();
 
         UsableManager = PlayerManager.gameObject.GetComponent<UsableManager>();
         PlayerMovement = PlayerManager.gameObject.GetComponent<Movement>();
 
         ObscureMap.AddListener(OnObscureMap);
+        EndGame.AddListener(OnEndGame);
         MiniMap.Clear();
 
         InvisibilityPanel.enabled = false;
-
+        //EndOFGameText.enabled = false;
+        //EndOFGameImage.enabled = false;
     }
 
     private void FixedUpdate()
@@ -79,7 +85,6 @@ public class UIManager : MonoBehaviour
         SetUIScore(GameManager.Score);
         SetUIFlag(GameManager.PlayerFlags, GameManager.EnemyFlags);
         SetUIUsable(UsableManager.ObtainedUsableAmount[0], UsableManager.ObtainedUsableAmount[1], UsableManager.ObtainedUsableAmount[2]);
-        SetDirection();
 
         //update timers
         UpdateTimer();
@@ -129,10 +134,6 @@ public class UIManager : MonoBehaviour
     {
         UIUsables.SetUsableAmount(p1, p2, p3);
     }
-    private void SetDirection()
-    {
-        DirectionVisualizer.VisualizeDirection();
-    }
     
     private void UpdateTimer()
     {
@@ -171,6 +172,13 @@ public class UIManager : MonoBehaviour
     {
         ObscurationTimeLeft = obscureTime;
         MiniMap.Obscure();
+    }
+
+    private void OnEndGame(string textToShow)
+    {
+        EndOFGameImage.enabled = true;
+        EndOFGameText.enabled = true;
+        EndOFGameText.SetText(textToShow);
     }
     #endregion
 }
