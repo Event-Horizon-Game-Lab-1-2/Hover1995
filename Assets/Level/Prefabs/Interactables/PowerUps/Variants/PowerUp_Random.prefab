@@ -170,7 +170,6 @@ MonoBehaviour:
   Malus: 0
   EffectTime: 0
   PowerUpGiven: 0
-  Quantity: 0
 --- !u!114 &-2591858624916469637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,8 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Malus: 0
   EffectTime: 0
-  PowerUpGiven: 2
-  Quantity: 0
+  PowerUpGiven: 1
 --- !u!114 &1559209198095938061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,5 +199,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Malus: 0
   EffectTime: 0
-  PowerUpGiven: 3
-  Quantity: 0
+  PowerUpGiven: 2
