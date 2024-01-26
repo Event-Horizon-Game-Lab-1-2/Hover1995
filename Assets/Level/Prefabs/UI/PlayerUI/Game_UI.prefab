@@ -1448,7 +1448,7 @@ MonoBehaviour:
   MiniMapView: {fileID: 8400000, guid: 4c1240607ff3cab4bb75fbf01bf911be, type: 2}
   MinimapObscurer: {fileID: 6471527241444349974}
   MinimapObscurer_EasterEgg: {fileID: 619268623449783763}
-  easterEggProbability: 1
+  easterEggProbability: 0.01
 --- !u!222 &7699603377938495033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1922,7 +1922,7 @@ Transform:
   m_Children:
   - {fileID: 755997084612617282}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8426437742804724531
 MonoBehaviour:
