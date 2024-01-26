@@ -23,7 +23,20 @@ public class EffectsManager : MonoBehaviour
     public static float SpeedEditStartTime { get; private set; } = 0f;
 
     [Header("PlayerReference")]
-    [SerializeField] PlayerManager playerManager;
+    [SerializeField] PlayerManager Player;
+
+    public PlayerManager PlayerManager
+    {
+        get
+        {
+            if (Player == null)
+            {
+                Player = FindFirstObjectByType<PlayerManager>();
+            }
+            return Player;
+        }
+        set => Player = value;
+    }
 
     private void Awake()
     {
@@ -40,6 +53,9 @@ public class EffectsManager : MonoBehaviour
 
         if (SpeedEditUsed == null)
             SpeedEditUsed = new UnityEvent<float, bool>();
+
+        if (PlayerManager == null)
+            PlayerManager = FindFirstObjectByType<PlayerManager>();
 
         //add all listener
         WallUsed.AddListener(OnWallUsed);
@@ -80,7 +96,7 @@ public class EffectsManager : MonoBehaviour
             SpeedEditTime-=Time.fixedDeltaTime;
             if(SpeedEditTime < 0f)
             {
-                playerManager.GetComponent<Movement>().SpeedLimiter = playerManager.GetComponent<Movement>().StartSpeedLimiter;
+                Player.GetComponent<Movement>().SpeedLimiter = Player.GetComponent<Movement>().StartSpeedLimiter;
                 SpeedEditTime = 0f;
             }
         }

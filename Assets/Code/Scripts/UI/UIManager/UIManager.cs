@@ -74,8 +74,8 @@ public class UIManager : MonoBehaviour
         MiniMap.Clear();
 
         InvisibilityPanel.enabled = false;
-        //EndOFGameText.enabled = false;
-        //EndOFGameImage.enabled = false;
+        EndOFGameText.enabled = false;
+        EndOFGameImage.enabled = false;
     }
 
     private void FixedUpdate()

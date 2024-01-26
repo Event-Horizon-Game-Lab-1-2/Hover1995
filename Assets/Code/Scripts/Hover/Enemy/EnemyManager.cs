@@ -26,11 +26,15 @@ public class EnemyController : MonoBehaviour
 
     [Header("Targetting Options")]
     [SerializeField] LayerMask TargetLayer;
-    [SerializeField] float ChasingSpeedMultiplier = 0.5f;
+    [SerializeField] float ChasingSpeed = 15f;
     [SerializeField] float LeaveChaseDistance = 30f;
 
+    [Header("Gizmos Settings")]
+    [SerializeField] bool DrawGizsmos = true;
+    [SerializeField] Color VisionRaycastColor = Color.magenta;
+    [SerializeField] Color GivingUpDistanceColor = Color.green;
+
     private bool IsChasing = false;
-    private bool SpeedIncreased = false;
     private bool IsStunned = false;
 
     GameObject ChasingObject;
@@ -74,12 +78,14 @@ public class EnemyController : MonoBehaviour
             if (ChasingObject == null)
             {
                 IsChasing = false;
+                Agent.speed = StartingSpeed;
                 Agent.SetDestination(TargetTransform.position);
                 return;
             }
             
             if (Vector3.Distance(transform.position, ChasingObject.transform.position) < LeaveChaseDistance)
             {
+                Agent.speed = ChasingSpeed;
                 Agent.SetDestination(ChasingObject.transform.position);
                 //if is chasing player
                 if (ChasingObject.GetComponent<PlayerManager>() != null)
@@ -89,6 +95,7 @@ public class EnemyController : MonoBehaviour
             {
                 ChasingObject = null;
                 IsChasing = false;
+                Agent.speed = StartingSpeed;
                 Agent.SetDestination(TargetTransform.position);
             }
         }
@@ -211,7 +218,10 @@ public class EnemyController : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.magenta;
+        if (!DrawGizsmos)
+            return;
+
+        Gizmos.color = VisionRaycastColor;
         float singleRayAperture = RaysAperture / RaysAmount;
 
         for (int i = 0; i < RaysAmount / 2; i++)
@@ -232,7 +242,7 @@ public class EnemyController : MonoBehaviour
             Gizmos.DrawRay(ray.origin, direction);
         }
 
-        Handles.color = Color.green;
+        Handles.color = GivingUpDistanceColor;
         Handles.DrawWireDisc(transform.position, Vector3.up, LeaveChaseDistance);
     }
 #endif
