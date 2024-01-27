@@ -160,14 +160,17 @@ public class EnemyController : MonoBehaviour
         //disable the agent
         Agent.enabled = false;
 
-        
+
+        Body.velocity = Vector3.zero;
+
         //bounce
-        /*
         Bounce(collision);
-        */
+
         //wait
         yield return new WaitForSeconds(StunSecAfterBounce);
-        
+
+        Body.velocity = Vector3.zero;
+
         //enable agent
         Agent.velocity = Vector3.zero;
         Agent.enabled = true;
@@ -185,7 +188,6 @@ public class EnemyController : MonoBehaviour
 
     private void Bounce(Collision collision)
     {
-        Body.isKinematic = true;
         //Apply Bounce
         if (collision.contacts[0].normal.y == 0)
         {
@@ -212,7 +214,6 @@ public class EnemyController : MonoBehaviour
             //Add the bounce force
             Body.AddForceAtPosition(new Vector3(forceApplied * collisionNormal.x, 0.0f, forceApplied * collisionNormal.z), collisionBouncePoint, ForceMode.Impulse);
         }
-        Body.isKinematic = false;
     }
 
 #if UNITY_EDITOR

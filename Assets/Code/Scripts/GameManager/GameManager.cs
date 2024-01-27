@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     private Transform playerTransform;
     private PlayerManager Player;
+
     public PlayerManager PlayerManager
     {
         get

@@ -13,8 +13,12 @@ PrefabInstance:
       value: Trap_Stop
       objectReference: {fileID: 0}
     - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b9bdf5cf29c5a14399f8afa6468ce14, type: 3}
+    - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_Color.b
-      value: 0.3915094
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_Color.g
@@ -22,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2012330463727891810, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_Color.r
-      value: 0.95700014
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2773078898068465980, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: EffectOnTrigger
@@ -83,6 +87,14 @@ PrefabInstance:
     - target: {fileID: 4942297078792498232, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149629195153170387, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6149629195153170387, guid: ab5a4426f6690894481269507c6e1f54, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
