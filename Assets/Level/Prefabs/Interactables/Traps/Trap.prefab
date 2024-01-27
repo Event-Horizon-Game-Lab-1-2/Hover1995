@@ -53,6 +53,7 @@ MonoBehaviour:
     m_Bits: 128
   EffectOnTrigger: {fileID: 0}
   RemoveOnTrigger: 0
+  SendRespawnRequest: 0
 --- !u!54 &4877200072243724690
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -195,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7372365996225211600}
   - component: {fileID: 2889653663881976092}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: MinimapIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
