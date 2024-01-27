@@ -64,6 +64,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e5af168899974bc4cbb0fd751e234925, type: 2}
+    - target: {fileID: 3061132743835248485, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49056602
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061132743835248485, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2902764
+      objectReference: {fileID: 0}
+    - target: {fileID: 3061132743835248485, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
+      propertyPath: m_Color.r
+      value: 0.26101813
+      objectReference: {fileID: 0}
     - target: {fileID: 6027950618018909062, guid: 9498c4bc42e8bf444bff9e2550159276, type: 3}
       propertyPath: EnemylayerMask.m_Bits
       value: 256
