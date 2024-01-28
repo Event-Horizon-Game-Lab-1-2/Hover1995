@@ -18,7 +18,10 @@ public class ForceMovementEffect : Effect
 
     public override void ApplyEffect(GameObject gameObject)
     {
+        if (gameObject == null)
+            return;
         Rotated = false;
+        gameObject.transform.position = transform.position;
         Ref = gameObject.transform;
         StartRef = Ref;
         TimeCount = 0f;
